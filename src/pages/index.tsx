@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/tutorial-autentikasi-perpi">
-            Dokumentasi PERPI Member Management
+            Dokumentasi
           </Link>
         </div>
       </div>
