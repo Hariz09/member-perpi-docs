@@ -12,7 +12,7 @@ const config: Config = {
   },
 
   title: 'PERPI',
-  tagline: 'Perpi Member Management Docs',
+  tagline: 'PERPI Member Management Docs',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

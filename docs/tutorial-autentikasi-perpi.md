@@ -180,6 +180,11 @@ Hanya pengguna dengan peran **Leader** yang dapat membuat pengguna baru.
 
 ![Toast Success Create User](./img/auth/toast_success_create_user.png)
 
+:::warning Pembatasan Pembuatan Leader
+Leader **tidak dapat** membuat akun Leader lainnya.  
+Jika membutuhkan akun Leader tambahan, silakan **hubungi tim developer**.
+:::
+
 ---
 
 ## Sistem Peran dan Kontrol Akses
