@@ -93,14 +93,6 @@ Untuk berkontribusi pada dokumentasi ini:
 4. Push ke branch (`git push origin feature/AmazingFeature`)
 5. Buka Pull Request
 
-## 📄 License
-
-Proyek ini dilindungi oleh lisensi yang sesuai. Lihat file LICENSE untuk detail lebih lanjut.
-
-## 📞 Support
-
-Untuk pertanyaan atau dukungan, silakan hubungi tim PERPI atau buka issue di repository ini.
-
 ---
 
 **Website**: [member.perpi.id](https://member.perpi.id/)
