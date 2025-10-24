@@ -91,7 +91,7 @@ TODO
    - Simpan informasi rekening
 
 2. **Lanjut ke Proses Pembayaran**
-   - Lihat panduan [Pembayaran & Aktivasi](./08-payment-activation.md)
+   - Lihat panduan [Pembayaran & Aktivasi](./07-payment-activation.md)
    - Lakukan pembayaran secepatnya
    - Upload bukti transfer
 
@@ -161,7 +161,7 @@ TODO
 
 ### Jika Disetujui
 
-➡️ **[Lanjut ke: Pembayaran & Aktivasi](./08-payment-activation.md)**
+➡️ **[Lanjut ke: Pembayaran & Aktivasi](./07-payment-activation.md)**
 
 Di langkah selanjutnya, Anda akan:
 - Melakukan pembayaran biaya pendaftaran

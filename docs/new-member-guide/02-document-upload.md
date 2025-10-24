@@ -191,7 +191,7 @@ Untuk setiap dokumen yang sudah diupload:
 
 Setelah semua dokumen diupload dan dicek, Anda siap untuk:
 
-➡️ **[Lanjut ke: Submit Aplikasi](./04-application-submission.md)**
+➡️ **[Lanjut ke: Submit Aplikasi](./03-application-submission.md)**
 
 Di langkah selanjutnya, Anda akan:
 - Melakukan final check sebelum submit

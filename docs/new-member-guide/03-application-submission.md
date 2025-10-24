@@ -197,7 +197,7 @@ TODO
 **Tindakan Anda**:
 - Tunggu kontak dari inspector
 - Persiapkan kantor untuk kunjungan
-- Lanjut ke panduan [Kunjungan Kantor](./05-office-visit.md)
+- Lanjut ke panduan [Kunjungan Kantor](./04-office-visit.md)
 
 ### Skenario 2: Dokumen Perlu Revisi
 
@@ -368,7 +368,7 @@ Pastikan Anda memperbaiki SEMUA yang diminta reviewer. Jika masih ada yang kuran
 
 Setelah submit aplikasi, Anda perlu menunggu hasil review. Jika disetujui:
 
-➡️ **[Lanjut ke: Kunjungan Kantor](./05-office-visit.md)**
+➡️ **[Lanjut ke: Kunjungan Kantor](./04-office-visit.md)**
 
 Di langkah selanjutnya, Anda akan:
 - Menerima kontak dari inspector

@@ -85,4 +85,4 @@ TODO : Email sukses/gagal
 
 Setelah interview selesai, aplikasi Anda akan masuk ke tahap akhir:
 
-➡️ **[Lanjut ke: Rapat Pleno](./07-plenary-meeting.md)**
+➡️ **[Lanjut ke: Rapat Pleno](./06-plenary-meeting.md)**

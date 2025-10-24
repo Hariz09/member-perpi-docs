@@ -61,7 +61,7 @@ TODO
 ```
 
 **Tindakan Anda**:
-- Lanjut ke panduan [Interview & Presentasi](./06-interview.md)
+- Lanjut ke panduan [Interview & Presentasi](./05-interview.md)
 - Mulai persiapkan materi presentasi
 
 #### Jika Kantor Tidak Memenuhi Syarat
