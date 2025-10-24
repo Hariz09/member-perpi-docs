@@ -208,8 +208,3 @@ A: Hubungi tim PERPI melalui email atau telepon untuk update data.
    - Berpartisipasi aktif dalam setiap tahapan
 
 ---
-
-:::tip Mulai Sekarang
-Siap untuk memulai? Lanjutkan ke [Panduan Pembuatan Akun](./01-account-creation.md) untuk langkah pertama Anda!
-:::
-
