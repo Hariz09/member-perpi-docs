@@ -1,7 +1,7 @@
 # 1. Pengisian Profil Perusahaan
 
-:::info Langkah Kedua
-Setelah membuat akun, langkah selanjutnya adalah melengkapi profil perusahaan Anda. Data ini akan menjadi dasar penilaian aplikasi keanggotaan.
+:::warning Pastikan Anda Telah Membuat Akun
+Sebelum melengkapi profil perusahaan, pastikan Anda sudah membuat akun dan login ke sistem. Jika belum, silakan baca terlebih dahulu: **[📖 Panduan Autentikasi](../tutorial-autentikasi-perpi.md)**
 :::
 
 ## Gambaran Umum
@@ -44,23 +44,21 @@ Setelah login pertama kali, Anda akan otomatis diarahkan ke halaman aplikasi:
 1. **URL**: `/applications/[companyId]`
 2. **Navigasi**: Dashboard → Tab "Informasi Perusahaan"
 
-:::tip Screenshot
-📸 **Path Screenshot**: `/applications/[companyId]`
-- Navigation cards menampilkan progress
-- Card "Informasi Perusahaan" dengan status "Berlangsung"
-- Form profil perusahaan di bawahnya
-:::
+![Tampilan Awal](../img/new-member/company-profile/landing.png)
 
 ### Tampilan Awal
 
 Anda akan melihat:
-- **Navigation Cards**: Menampilkan 5 tahapan proses
-- **Status Current**: "Informasi Perusahaan" berwarna biru (Berlangsung)
-- **Form**: Form panjang dengan beberapa section
+1. Header aplikasi yang berisi data perusahaan di bagian kiri, dan informasi aplikasi di sebelah kanan
+2. Progress bar beserta tab yang menunjakan langkah-langkah aplikasi.
+
+Jika anda scroll kebawah anda akan melihat form data perusahaan
+
 
 ## Langkah 2: Isi Data PIC (Person in Charge)
 
 ### Section: Informasi PIC
+![Form PIC](../img/new-member/company-profile/form_1_pic.png)
 
 PIC adalah orang yang bertanggung jawab dan menjadi contact person utama.
 
@@ -88,9 +86,18 @@ Nama PIC akan digunakan dalam semua komunikasi resmi. Pastikan menggunakan nama 
 - Nomor ini akan digunakan untuk koordinasi kunjungan dan interview
 :::
 
+#### 3. Jenis Perusahaan
+- **Format**: Single select dropdown
+- **Opsi**: Lokal atau Multinational
+- **Contoh**: "Lokal"
+
+#### Bio dan Deskripsi Perusahaan (Opsional)
+- **Format**: Teks panjang
+
 ## Langkah 3: Isi Data Perusahaan
 
 ### Section: Informasi Perusahaan
+![Form Informasi Perusahaan](../img/new-member/company-profile/form_2_company-info.png)
 
 #### 1. Nama Perusahaan
 - **Format**: Nama resmi perusahaan
@@ -117,6 +124,7 @@ Website akan ditampilkan di profil perusahaan. Pastikan:
 
 ## Langkah 4: Isi Alamat Kantor
 ### Section: Alamat Kantor
+![Form Alamat Kantor](../img/new-member/company-profile/form_3_address.png)
 
 :::warning Penting
 Alamat ini akan diverifikasi melalui kunjungan kantor. Pastikan:
@@ -157,12 +165,12 @@ Anda dapat menggunakan search bar ***Cari Lokasi Perusahaan*** untuk autofill al
 
 ## Langkah 5: Isi Data Operasional
 
-### Section: Informasi Operasional Perusahaan
 Informasi lengkap tentang layanan, sumber daya manusia, dan keuangan perusahaan
 
 ---
 
-#### A. Layanan dan Teknologi
+#### A. Section: Layanan dan Teknologi
+![Form Informasi Operasional](../img/new-member/company-profile/form_4_operational-info.png)
 
 ##### 1. Industri yang Didukung *
 - **Format**: Single select dropdown
@@ -196,8 +204,8 @@ Pilih industri utama yang menjadi fokus atau spesialisasi perusahaan riset Anda.
 
 ---
 
-#### B. Sumber Daya Manusia
-
+#### B. Section: Sumber Daya Manusia
+![Form Sumber Daya Manusia](../img/new-member/company-profile/form_5_human-resources.png)
 ##### 1. Jenis Karyawan *
 - **Format**: Multi select (checkbox)
 - **Opsi**:
@@ -225,9 +233,10 @@ Tim pendukung mencakup staf administrasi, IT, keuangan, HR, dan fungsi support l
 
 ---
 
-#### C. Informasi Pendapatan
+#### C. Section: Informasi Pendapatan
+![Form Informasi Pendapatan](../img/new-member/company-profile/form_6_income.png)
 
-##### 6. Rentang Pendapatan Tahunan
+##### 1. Rentang Pendapatan Tahunan
 - **Format**: Single select dropdown
 - **Opsi**:
   - < 10 Miliar Rupiah
@@ -240,13 +249,13 @@ Tim pendukung mencakup staf administrasi, IT, keuangan, HR, dan fungsi support l
 Informasi ini bersifat rahasia dan hanya digunakan untuk keperluan internal PERPI serta analisis industri riset pasar.
 :::
 
-##### 7. Persentase Pendapatan Kualitatif
+##### 2. Persentase Pendapatan Kualitatif
 - **Format**: Angka (%)
 - **Validasi**: 0-100
 - **Contoh**: "60"
 - **Deskripsi**: Persentase pendapatan dari riset kualitatif (FGD, IDI, etnografi, dll)
 
-##### 8. Persentase Pendapatan Non-Kualitatif
+##### 3. Persentase Pendapatan Non-Kualitatif
 - **Format**: Angka (%)
 - **Validasi**: 0-100
 - **Contoh**: "40"
@@ -262,6 +271,16 @@ Total persentase dari riset kualitatif dan non-kualitatif harus sama dengan 100%
 - Jika ragu, gunakan estimasi terbaik Anda
 - Pastikan kedua persentase totalnya = 100%
 :::
+
+#### D. Section: Logo (Opsional)
+![Form Logo](../img/new-member/company-profile/form_7_logo.png)
+
+##### 1. Logo Perusahaan
+- **Format**: Gambar (JPG, PNG)
+- **Validasi**: Maksimal 5MB
+- **Deskripsi**: Upload logo perusahaan
+- **Tips**: Gunakan logo resmi perusahaan
+
 
 ---
 
@@ -294,12 +313,8 @@ Sebelum menyimpan, sistem akan memvalidasi:
    - Navigation card "Informasi Perusahaan" berubah jadi "Selesai" (hijau)
    - Navigation card "Dokumen" berubah jadi "Berlangsung" (biru)
 
-:::tip Screenshot
-📸 **Path Screenshot**: Setelah simpan berhasil
-- Toast notification sukses
-- Navigation cards dengan status updated
-- Tab "Dokumen" menjadi aktif
-:::
+Contoh field yang error:
+![Field Error](../img/new-member/company-profile/form_invalid.png)
 
 ## Langkah 7: Edit Profil (Jika Diperlukan)
 
