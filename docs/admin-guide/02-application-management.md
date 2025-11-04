@@ -5,11 +5,7 @@ sidebar_label: Application Management
 sidebar_position: 4
 ---
 
-# Application Management - Leader & Committee
-
-:::info Akses
-Untuk **Leader** dan **Committee** (inspector/interviewer). Finance tidak punya akses.
-:::
+# Application Management - Leader
 
 Panduan visual cara mengelola aplikasi keanggotaan.
 
@@ -19,19 +15,21 @@ Panduan visual cara mengelola aplikasi keanggotaan.
 
 ### Step 1: Buka Menu Aplikasi
 
-<!-- ![Applications Menu](./screenshots/03-applications-menu.png) -->
+![Applications Menu](../img/admin/apllication-management/menu.png)
+
 *Screenshot: Menu "Aplikasi" di sidebar*
 
 **Cara Akses**:
 1. Login sebagai **Leader**
 2. Klik menu **"Aplikasi"**
-3. Atau akses: `/leader/applications`
+3. Atau akses: https://member.perpi.id/leader/applications
 
 ---
 
 ### Step 2: Lihat Daftar Aplikasi
 
-<!-- ![Applications List](./screenshots/03-applications-list.png) -->
+![Applications List](../img//admin/apllication-management/page.png)
+
 *Screenshot: Halaman daftar aplikasi dengan tabel*
 
 **Komponen Halaman**:
@@ -39,7 +37,6 @@ Panduan visual cara mengelola aplikasi keanggotaan.
 - **Filter by Status** - Filter berdasarkan status
 - **Tabel aplikasi** dengan kolom:
   - Company Name
-  - PIC Name & Email
   - Status (badge berwarna)
   - Submitted At
   - Actions (View Details button)
@@ -50,7 +47,8 @@ Panduan visual cara mengelola aplikasi keanggotaan.
 
 ### Status Badge
 
-<!-- ![Status Badges](./screenshots/03-status-badges.png) -->
+![Status Badges](../img/admin/apllication-management/status-badge.png)
+
 *Screenshot: Berbagai badge status dengan warna*
 
 | Status | Badge | Aksi |
@@ -68,52 +66,59 @@ Panduan visual cara mengelola aplikasi keanggotaan.
 
 ## 🔎 Cara Lihat Detail Aplikasi
 
-### Step 1: Klik "View Details"
+### Step 1: Klik "Lihat Detail"
 
-<!-- ![View Details Button](./screenshots/03-view-details-button.png) -->
-*Screenshot: Tombol "View Details" di kolom Actions*
+![Lihat Detail Button](../img/admin/apllication-management/detail-button.png)
+
+*Screenshot: Tombol "Lihat Detail" di kolom Actions*
+
+Jika diklik, akan muncul halaman detail aplikasi.
 
 ---
 
 ### Step 2: Lihat Informasi Lengkap
 
-<!-- ![Application Detail Page](./screenshots/03-application-detail.png) -->
+![Application Detail Page](../img/admin/apllication-management/apllication-page.png)
 *Screenshot: Halaman detail aplikasi dengan semua informasi*
 
-## ▶️ Cara Start Review (Leader Only)
+#### Penjelasan Komponen Header
+![Application Detail Header](../img/admin/apllication-management/header.png)
 
-:::warning Leader Only
-Hanya **Leader** yang bisa start review.
-:::
+1. Kembali Button
+Tombol untuk kembali ke halaman sebelumnya (biasanya daftar aplikasi).
 
-### Step 1: Klik "Start Review"
+2. Dashboard Leader Button
+Shortcut menuju dashboard utama Leader untuk melihat ringkasan aktivitas dan status aplikasi.
 
-<!-- ![Start Review Button](./screenshots/03-start-review-button.png) -->
-*Screenshot: Tombol "Start Review" untuk aplikasi dengan status "submitted"*
+3. Tolak Aplikasi Button
+Tombol untuk menolak aplikasi secara permanen. Hanya muncul jika status aplikasi masih dalam tahap peninjauan (submitted atau under_review).
 
-**Kapan**: Status aplikasi = **submitted**
+4. Company Name
+Nama perusahaan yang mengajukan keanggotaan, ditampilkan tebal sebagai judul utama.
 
----
+5. Alamat Perusahaan
+Lokasi perusahaan yang diambil dari data pendaftaran. Dapat diklik untuk membuka lokasi di Google Maps.
 
-### Step 2: Konfirmasi
+6. Detail PIC (Person in Charge)
+Bagian yang menampilkan informasi kontak penanggung jawab perusahaan:
+  - Nama PIC
+  - Alamat email
+  - Nomor telepon
 
-<!-- ![Start Review Confirmation](./screenshots/03-start-review-confirmation.png) -->
-*Screenshot: Dialog konfirmasi start review*
+7. Status Keanggotaan
+Badge berwarna oranye dengan label PENDAFTAR, menandakan bahwa perusahaan sedang dalam proses pendaftaran dan belum resmi menjadi anggota.
 
-Klik **"Yes, Start Review"**
+8. Status Aplikasi
+Status aplikasi saat ini
 
----
+9. Peran Pengguna (User Role)
+Badge yang menampilkan peran pengguna saat ini, misalnya Inspector - Fulan . Ini menunjukkan pengguna yang sedang mengakses halaman berstatus sebagai inspector.
 
-### Step 3: Status Berubah
+10. Peringatan Status Aplikasi (Alert Box)
+Kotak peringatan berwarna kuning yang muncul jika aplikasi sedang menunggu tinjauan. Menjelaskan bahwa aplikasi telah dikirim dan menunggu proses peninjauan.
 
-<!-- ![Under Review Status](./screenshots/03-under-review-status.png) -->
-*Screenshot: Status berubah menjadi "under_review"*
-
-**Setelah Start Review**:
-- ✅ Status = **under_review**
-- ✅ Leader assigned sebagai reviewer
-- ✅ Bisa review dokumen
-- ✅ Bisa request revisi atau approve
+12. Tombol Mulai Tinjau
+Tombol utama untuk memulai proses review. Jika ditekan, status aplikasi akan berubah dari submitted menjadi Sedang Ditinjau, dan Leader akan ditugaskan sebagai reviewer.
 
 ---
 
