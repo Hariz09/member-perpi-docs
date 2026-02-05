@@ -33,7 +33,11 @@ Tutorial ini menjelaskan cara menggunakan sistem autentikasi lengkap pada [aplik
 2. **Masukkan Password**: Ketik kata sandi Anda
 3. **Klik Tombol "Masuk"**: Sistem akan memverifikasi kredensial Anda
 
-<img src={require('./img/auth/login.png').default} alt="Login Page" className="img-small" />
+<div style={{ width: '60%', margin: '0 auto' }}>
+
+![Login Page](/img/auth/login.png)
+
+</div>
 
 ### Fitur Login
 
@@ -57,7 +61,7 @@ Tutorial ini menjelaskan cara menggunakan sistem autentikasi lengkap pada [aplik
 1. Dari halaman login, klik link "Buat Akun Baru"
 2. Atau akses langsung melalui URL: https://member.perpi.id/auth/signup
 
-<img src={require('./img/auth/tombol_daftar.png').default} alt="Success Signup Page" className="img-small" />
+<img src="/img/auth/tombol_daftar.png" alt="Success Signup Page" className="img-small" />
 
 ### Proses Registrasi
 
@@ -75,7 +79,7 @@ Tutorial ini menjelaskan cara menggunakan sistem autentikasi lengkap pada [aplik
 
 3. **Klik "Buat Akun"**: Sistem akan mengirim email verifikasi
 
-<img src={require('./img/auth/signup.png').default} alt="Signup Page" className="img-small" />
+<img src="/img/auth/signup.png" alt="Signup Page" className="img-small" />
 
 ### Verifikasi Email
 
@@ -86,7 +90,7 @@ Setelah registrasi berhasil:
 3. **Konfirmasi**: Akun Anda akan aktif setelah verifikasi
 
 :::info Contoh Email
-<img src={require('./img/auth/email_signup.png').default} alt="Success Signup Page" className="img-medium" />
+<img src="/img/auth/email_signup.png" alt="Success Signup Page" className="img-medium" />
 :::
 
 :::warning Penting
@@ -101,7 +105,7 @@ Jika tidak menerima email:
 2. Tunggu cooldown period (60 detik)
 3. Periksa folder spam/junk
 
-<img src={require('./img/auth/signup_success.png').default} alt="Success Signup Page" className="img-small" />
+<img src="/img/auth/signup_success.png" alt="Success Signup Page" className="img-small" />
 
 ---
 
@@ -112,8 +116,8 @@ Jika tidak menerima email:
 1. **Akses Halaman Reset**: Dari halaman login, klik "Lupa kata sandi?"
 2. **Masukkan Email**: Ketik email yang terdaftar
 3. **Klik "Kirim Email Reset"**: Sistem akan mengirim link reset
-<img src={require('./img/auth/tombol_lupa_kata_sandi.png').default} alt="Tombol Lupa Password" className="img-small" />
-<img src={require('./img/auth/forgot_password.png').default} alt="Forgot Password Page" className="img-small" />
+<img src="/img/auth/tombol_lupa_kata_sandi.png" alt="Tombol Lupa Password" className="img-small" />
+<img src="/img/auth/forgot_password.png" alt="Forgot Password Page" className="img-small" />
 
 ### Proses Reset Password
 
@@ -122,10 +126,10 @@ Jika tidak menerima email:
 3. **Buat Password Baru**: Anda akan diarahkan ke halaman update password
 
 :::info Contoh Email
-<img src={require('./img/auth/email_reset_password.png').default} alt="Success Signup Page" className="img-medium" />
+<img src="/img/auth/email_reset_password.png" alt="Success Signup Page" className="img-medium" />
 :::
 
-<img src={require('./img/auth/update_password.png').default} alt="Update Password Page" className="img-small" />
+<img src="/img/auth/update_password.png" alt="Update Password Page" className="img-small" />
 
 ### Tips Keamanan Password
 
@@ -142,7 +146,7 @@ Jika tidak menerima email:
 
 Seletah anda berhasil login floating button manajemen pengguna muncul di pojok kanan bawah layar pada semua halaman.
 
-<img src={require('./img/auth/floating_user_management.png').default} alt="User Management Toggle" className="img-small" />
+<img src="/img/auth/floating_user_management.png" alt="User Management Toggle" className="img-small" />
 
 ### Fitur Floating Button
 
@@ -164,14 +168,14 @@ Terdapat laman yang digunakan untuk mengelola akses, peran, dan keamanan anggota
 
 Untuk memulai, navigasikan ke menu Pengguna pada sidebar di sisi kiri layar. Setelah berada di halaman Manajemen Pengguna, klik tombol Tambah Pengguna yang berada di pojok kanan atas.
 
-<img src={require('./img/auth/create_user/leader_sidebar.png').default} alt="Halaman Manajemen Pengguna" className="img-small" />
+<img src="/img/auth/create_user/leader_sidebar.png" alt="Halaman Manajemen Pengguna" className="img-small" />
 
 2. **Form Tambah Pengguna Baru**
 
 Setelah tombol diklik, akan muncul modal popup Tambah Pengguna Baru. Pastikan data yang dimasukkan akurat untuk keperluan audit.
 
-<img src={require('./img/auth/create_user/tombol_add_user.png').default} alt="Halaman Manajemen Pengguna" className="img-medium" />
-<img src={require('./img/auth/create_user/modal_add_user.png').default} alt="Halaman Manajemen Pengguna" className="img-small" />
+<img src="/img/auth/create_user/tombol_add_user.png" alt="Halaman Manajemen Pengguna" className="img-medium" />
+<img src="/img/auth/create_user/modal_add_user.png" alt="Halaman Manajemen Pengguna" className="img-small" />
 
 1. Nama Lengkap: Masukkan nama lengkap pengguna yang akan didaftarkan.
 2. Email: Gunakan format email resmi (contoh: user@perusahaan.com).
