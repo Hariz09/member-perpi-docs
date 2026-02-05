@@ -73,6 +73,11 @@ const config: Config = {
           position: 'left',
           label: 'Dokumentasi ',
         },
+        {
+          to: '/docs/test-section',
+          position: 'left',
+          label: 'Test Section',
+        },
       ],
     },
     footer: {

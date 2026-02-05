@@ -4,7 +4,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import HomepageFeatures from '../components/HomepageFeatures';
 
 import styles from './index.module.css';
 
@@ -16,12 +15,20 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Pusat Dokumentasi & Informasi Sistem Manajemen Anggota
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/tutorial-autentikasi-perpi">
-            Dokumentasi
+            Panduan Pengguna
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            style={{ marginLeft: '1rem' }}
+            to="/docs/test-section">
+            Log Pembaruan
           </Link>
         </div>
       </div>
@@ -33,11 +40,14 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.title}
+      description="Pusat Dokumentasi & Informasi Sistem Manajemen Anggota PERPI">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <div className="container" style={{ padding: '4rem 0', textAlign: 'center' }}>
+          <h3>Selamat Datang</h3>
+          <p>Temukan cara penggunaan aplikasi dan informasi rilis fitur terbaru di sini.</p>
+        </div>
       </main>
     </Layout>
   );

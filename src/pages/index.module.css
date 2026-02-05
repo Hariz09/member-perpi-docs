@@ -1,23 +1,63 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* --- HERO SECTION --- */
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0; 
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* Kita hapus color global disini, kita set spesifik di elemen bawah */
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+/* --- JUDUL UTAMA (H1) --- */
+.heroTitle {
+  font-size: 3.5rem; 
+  font-weight: 800; 
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  
+  /* PENTING: Memaksa warna putih di Light & Dark Mode */
+  color: #ffffff !important; 
 }
 
+/* --- SUBTITLE --- */
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto; 
+  margin-bottom: 2.5rem;
+  
+  /* PENTING: Warna putih agak transparan dikit biar elegan */
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* --- CONTAINER TOMBOL --- */
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 24px; 
+}
+
+/* --- INTRO SECTION --- */
+.introSection {
+  padding: 4rem 0;
+  text-align: center;
+  /* Warna teks intro kembali mengikuti tema (Hitam di Light, Putih di Dark) */
+  color: var(--ifm-font-color-base); 
+  background-color: var(--ifm-background-color);
+}
+
+/* --- RESPONSIF --- */
+@media screen and (max-width: 996px) {
+  .heroBanner { padding: 4rem 0; }
+  .heroTitle { font-size: 2.5rem; }
+  .heroSubtitle { font-size: 1.2rem; padding: 0 1rem; }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .buttons a { width: 100%; }
 }
