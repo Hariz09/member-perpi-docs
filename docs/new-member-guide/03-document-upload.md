@@ -13,8 +13,6 @@ Setelah melengkapi profil perusahaan, langkah selanjutnya adalah mengunggah doku
 
 Dokumen adalah bukti legalitas dan kredibilitas perusahaan Anda. Tim PERPI akan mereview semua dokumen untuk memastikan perusahaan memenuhi persyaratan keanggotaan.
 
-**Estimasi Waktu**: 1-2 hari (termasuk persiapan dokumen)
-
 **Status Aplikasi**: `Pengisian Dokumen` → `Diajukan` (setelah submit)
 
 ## Daftar Dokumen yang Diperlukan
@@ -43,7 +41,7 @@ Berikut adalah 11 dokumen PDF yang wajib diupload:
 | 16 | Surat Pernyataan Operasional                         | Komitmen kepatuhan dan operasional (tersedia template)                                             | Wajib    |
 
 :::warning Penting
-Semua dokumen wajib harus diupload sebelum Anda dapat submit aplikasi. Aplikasi tidak dapat disubmit jika ada dokumen wajib yang belum diupload. dokumen tidak akan tersimpan sebelum aplikasi disubmit.
+Semua dokumen wajib diupload sebelum Anda dapat submit aplikasi. Aplikasi tidak dapat disubmit jika ada dokumen wajib yang belum diupload. dokumen tidak akan tersimpan sebelum aplikasi disubmit.
 :::
 
 ## Persiapan Dokumen
@@ -57,19 +55,18 @@ Sebelum mulai upload, pastikan:
 - [ ] Dokumen terbaca dengan jelas (tidak blur)
 - [ ] Ukuran file tidak terlalu besar (max 5MB per file)
 - [ ] Dokumen sudah ditandatangani (untuk surat pernyataan)
-- [ ] Scan dengan resolusi yang baik (minimal 150 DPI)
+- [ ] Scan dengan resolusi yang baik
 
 ## Langkah 1: Akses Halaman Upload Dokumen
 
 ### Cara Mengakses
 
 1. **Dari Dashboard**: Klik tab "Dokumen"
-2. **URL**: `/applications/[companyId]` → Ini adalah url setelah login
-3. **Otomatis**: Setelah simpan profil, tab Dokumen akan aktif
+2. **Otomatis**: Setelah simpan profil, tab Dokumen akan aktif
 
-![Tab Dokumen](../img/new-member/document-upload/header.png)
 
 ### Tampilan Halaman
+<img src="/img/new-member/document-upload/header.png" alt="Header" className="img-small"/>
 
 Anda akan melihat:
 - **Progress Bar**: Menunjukkan berapa dokumen yang sudah diupload
@@ -85,6 +82,7 @@ Untuk setiap dokumen:
 #### 1. Klik Tombol "Upload"
 - Tombol ada di setiap card dokumen
 - Dialog file picker akan muncul
+<img src="/img/new-member/document-upload/tombol_upload.png" alt="Tombol Upload" className="img-small"/>
 
 #### 2. Pilih File
 - Browse file PDF dari komputer Anda
@@ -95,6 +93,8 @@ Sistem akan memvalidasi:
 - **Format**: Harus PDF
 - **Ukuran**: Maksimal 5MB
 - **Nama File**: Sebaiknya deskriptif
+
+<img src="/img/new-member/document-upload/validasi.png" alt="Tombol Upload" className="img-small"/>
 
 :::warning Validasi
 Jika file tidak sesuai, akan muncul error:
@@ -107,7 +107,7 @@ Jika file tidak sesuai, akan muncul error:
 - Status dokumen berubah jadi "Uploaded"
 - Preview dokumen tersedia
 
-![Upload Dokumen](../img/new-member/document-upload/upload-documents.png)
+<img src="/img/new-member/document-upload/toast.png" alt="Toast" className="img-large"/>
 
 ## Langkah 3: Submisi
 
@@ -118,7 +118,7 @@ Selama proses submisi berlangsung, mohon bersabar dan jangan menutup halaman hin
 Tunggu hingga persentase upload mencapai 100% untuk memastikan seluruh data tersimpan dengan benar.
 :::
 
-![Submit Aplikasi](../img/new-member/document-upload/apllication_submission.gif)
+<img src="/img/new-member/document-upload/apllication_submission.gif" alt="Toast" className="img-small"/>
 
 ## Troubleshooting
 
@@ -178,8 +178,6 @@ Tunggu hingga persentase upload mencapai 100% untuk memastikan seluruh data ters
 ## Langkah Selanjutnya
 
 Setelah semua dokumen diupload dan dicek, Anda siap untuk:
-
-➡️ **[Lanjut ke: Submit Aplikasi](./03-application-submission.md)**
 
 Di langkah selanjutnya, Anda akan:
 - Melakukan final check sebelum submit
