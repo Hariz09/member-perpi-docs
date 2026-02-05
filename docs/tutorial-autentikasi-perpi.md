@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Tutorial Sistem Autentikasi PERPI
+# Sistem Autentikasi PERPI
 
 :::info Tentang Tutorial Ini
 Tutorial ini menjelaskan cara menggunakan sistem autentikasi lengkap pada [aplikasi Member PERPI](http://member.perpi.id/), termasuk login, registrasi, reset password, manajemen pengguna, dan kontrol akses berdasarkan peran.
@@ -33,7 +33,7 @@ Tutorial ini menjelaskan cara menggunakan sistem autentikasi lengkap pada [aplik
 2. **Masukkan Password**: Ketik kata sandi Anda
 3. **Klik Tombol "Masuk"**: Sistem akan memverifikasi kredensial Anda
 
-![Login Page](./img/auth/login.png)
+<img src={require('./img/auth/login.png').default} alt="Login Page" className="img-small" />
 
 ### Fitur Login
 
@@ -57,6 +57,8 @@ Tutorial ini menjelaskan cara menggunakan sistem autentikasi lengkap pada [aplik
 1. Dari halaman login, klik link "Buat Akun Baru"
 2. Atau akses langsung melalui URL: https://member.perpi.id/auth/signup
 
+<img src={require('./img/auth/tombol_daftar.png').default} alt="Success Signup Page" className="img-small" />
+
 ### Proses Registrasi
 
 1. **Isi Form Registrasi**:
@@ -73,7 +75,7 @@ Tutorial ini menjelaskan cara menggunakan sistem autentikasi lengkap pada [aplik
 
 3. **Klik "Buat Akun"**: Sistem akan mengirim email verifikasi
 
-![Signup Page](./img/auth/signup.png)
+<img src={require('./img/auth/signup.png').default} alt="Signup Page" className="img-small" />
 
 ### Verifikasi Email
 
@@ -83,8 +85,12 @@ Setelah registrasi berhasil:
 2. **Klik Link Verifikasi**: Klik link yang dikirim oleh sistem
 3. **Konfirmasi**: Akun Anda akan aktif setelah verifikasi
 
+:::info Contoh Email
+<img src={require('./img/auth/email_signup.png').default} alt="Success Signup Page" className="img-medium" />
+:::
+
 :::warning Penting
-Akun baru memiliki peran "member" secara default. Untuk peran lain (leader, committee, finance), hubungi administrator.
+Akun baru memiliki peran "member" secara default. Untuk peran lain (seperti pengurus), hubungi administrator.
 :::
 
 ### Kirim Ulang Email Verifikasi
@@ -95,7 +101,7 @@ Jika tidak menerima email:
 2. Tunggu cooldown period (60 detik)
 3. Periksa folder spam/junk
 
-![Success Signup Page](./img/auth/signup_success.png)
+<img src={require('./img/auth/signup_success.png').default} alt="Success Signup Page" className="img-small" />
 
 ---
 
@@ -106,8 +112,8 @@ Jika tidak menerima email:
 1. **Akses Halaman Reset**: Dari halaman login, klik "Lupa kata sandi?"
 2. **Masukkan Email**: Ketik email yang terdaftar
 3. **Klik "Kirim Email Reset"**: Sistem akan mengirim link reset
-
-![Forgot Password Page](./img/auth/forgot_password.png)
+<img src={require('./img/auth/tombol_lupa_kata_sandi.png').default} alt="Tombol Lupa Password" className="img-small" />
+<img src={require('./img/auth/forgot_password.png').default} alt="Forgot Password Page" className="img-small" />
 
 ### Proses Reset Password
 
@@ -115,7 +121,11 @@ Jika tidak menerima email:
 2. **Klik Link Reset**: Klik link yang dikirim sistem
 3. **Buat Password Baru**: Anda akan diarahkan ke halaman update password
 
-![Update Password Page](./img/auth/update_password.png)
+:::info Contoh Email
+<img src={require('./img/auth/email_reset_password.png').default} alt="Success Signup Page" className="img-medium" />
+:::
+
+<img src={require('./img/auth/update_password.png').default} alt="Update Password Page" className="img-small" />
 
 ### Tips Keamanan Password
 
@@ -130,10 +140,9 @@ Jika tidak menerima email:
 
 ### Lokasi dan Tampilan
 
-Floating button manajemen pengguna muncul di pojok kanan bawah layar pada semua halaman (kecuali halaman auth).
+Seletah anda berhasil login floating button manajemen pengguna muncul di pojok kanan bawah layar pada semua halaman.
 
-![User Management Toggle](./img/auth/user_managemenet_toggle.gif)
-![Floating Button Manajemen Pengguna](./img/auth/floating_button.gif)
+<img src={require('./img/auth/floating_user_management.png').default} alt="User Management Toggle" className="img-small" />
 
 ### Fitur Floating Button
 
@@ -149,36 +158,24 @@ Floating button manajemen pengguna muncul di pojok kanan bawah layar pada semua 
 ---
 
 ## Pembuatan Pengguna oleh Leader
+Terdapat laman yang digunakan untuk mengelola akses, peran, dan keamanan anggota tim dalam sistem Admin PERPI.
 
-### Akses Halaman User Management
+1. **Mengakses Halaman Pengguna**
 
-Hanya pengguna dengan peran **Leader** yang dapat membuat pengguna baru.
+Untuk memulai, navigasikan ke menu Pengguna pada sidebar di sisi kiri layar. Setelah berada di halaman Manajemen Pengguna, klik tombol Tambah Pengguna yang berada di pojok kanan atas.
 
-1. **Login sebagai Leader**
-2. **Akses Menu**: Navigasi ke https://member.perpi.id/leader/users
-3. **Klik "Add New User"**: Tombol biru di pojok kanan atas
+<img src={require('./img/auth/create_user/leader_sidebar.png').default} alt="Halaman Manajemen Pengguna" className="img-small" />
 
-![User Management Page](./img/auth/leader_users_management.png)
+2. **Form Tambah Pengguna Baru**
 
-### Proses Pembuatan Pengguna
+Setelah tombol diklik, akan muncul modal popup Tambah Pengguna Baru. Pastikan data yang dimasukkan akurat untuk keperluan audit.
 
-1. **Buka Dialog**: Klik tombol "Add New User"
-2. **Isi Form**:
-   - **Full Name**: Nama lengkap pengguna
-   - **Email**: Alamat email (harus unik)
-   - **Role**: Pilih peran (Leader/Committee/Finance/Member)
+<img src={require('./img/auth/create_user/tombol_add_user.png').default} alt="Halaman Manajemen Pengguna" className="img-medium" />
+<img src={require('./img/auth/create_user/modal_add_user.png').default} alt="Halaman Manajemen Pengguna" className="img-small" />
 
-3. **Klik "Create User"**: Sistem akan membuat akun otomatis
-
-![Create User Dialog](./img/auth/create_user_dialog.png)
-
-### Hasil Pembuatan Pengguna
-
-- Sistem membuat password kuat dan rahasia (tidak ditampilkan).
-- Pengguna baru harus reset password melalui halaman Lupa Kata Sandi.
-- Admin hanya melihat pesan: "User created successfully"
-
-![Toast Success Create User](./img/auth/toast_success_create_user.png)
+1. Nama Lengkap: Masukkan nama lengkap pengguna yang akan didaftarkan.
+2. Email: Gunakan format email resmi (contoh: user@perusahaan.com).
+3. Peran: Pilih hak akses yang sesuai melalui menu dropdown.
 
 :::warning Pembatasan Pembuatan Leader
 Leader **tidak dapat** membuat akun Leader lainnya.  
@@ -223,24 +220,6 @@ graph TD
 - **Profil Perusahaan**: Kelola data perusahaan
 - **Dashboard**: https://member.perpi.id/member atau https://member.perpi.id/application
 
-### Kontrol Akses Halaman
-
-| Halaman | Leader | Committee | Finance | Member |
-|---------|--------|-----------|---------|--------|
-| `/leader/*` | ✅ | ❌ | ❌ | ❌ |
-| `/committee/*` | ✅ | ✅ | ❌ | ❌ |
-| `/finance/*` | ✅ | ❌ | ✅ | ❌ |
-| `/member/*` | ✅ | ❌ | ❌ | ✅ (own data) |
-| `/applications/*` | ✅ | ✅ | ❌ | ✅ (own data) |
-
-### Redirect Otomatis
-
-Sistem secara otomatis mengarahkan pengguna ke dashboard yang sesuai:
-
-1. **Setelah Login**: Redirect ke dashboard sesuai peran
-2. **Akses Terlarang**: Redirect ke dashboard yang diizinkan
-3. **URL Langsung**: Validasi akses sebelum menampilkan halaman
-
 ### Status Keanggotaan Member
 
 Member memiliki status keanggotaan yang mempengaruhi akses:
@@ -249,7 +228,7 @@ Member memiliki status keanggotaan yang mempengaruhi akses:
 |--------|-------|------------|
 | `applicant` | `/applications/{id}` | Sedang proses aplikasi |
 | `active_member` | `/company/{id}` | Anggota aktif |
-| `inactive_member` | `/member/{id}/payment` | Perlu bayar iuran |
+| `inactive_member` | `/member/{id}/payment` | Member di nonaktifkan karena tidak membayar iuran |
 
 ---
 
