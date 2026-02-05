@@ -109,6 +109,20 @@ figcaption {
 /* --- UKURAN GAMBAR CUSTOM --- */
 /* Gunakan dengan HTML: <img src="..." class="img-small" /> */
 
+/* --- UKURAN GAMBAR CUSTOM RESPONSIVE --- */
+
+/* Base class agar semua gambar custom tidak melebihi container dan tetap proporsional */
+.img-xs, .img-small, .img-medium, .img-large, .img-xl, .img-full {
+  width: 100%;
+  height: auto;
+  display: block; /* Opsional: Agar tidak ada gap di bawah gambar */
+  margin: 1rem 0; /* Memberi jarak atas bawah agar tidak menempel teks */
+}
+
+.img-xs {
+  max-width: 300px !important;
+}
+
 .img-small {
   max-width: 400px !important;
 }
@@ -121,15 +135,10 @@ figcaption {
   max-width: 800px !important;
 }
 
-.img-full {
-  max-width: 100% !important;
-}
-
-/* Untuk gambar yang perlu ukuran lebih spesifik */
-.img-xs {
-  max-width: 300px !important;
-}
-
 .img-xl {
   max-width: 1000px !important;
+}
+
+.img-full {
+  max-width: 100% !important;
 }
