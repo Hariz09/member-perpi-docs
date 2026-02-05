@@ -74,9 +74,9 @@ const config: Config = {
           label: 'Dokumentasi ',
         },
         {
-          to: '/docs/test-section',
+          to: '/docs/log-pembaruan',
           position: 'left',
-          label: 'Test Section',
+          label: 'Log Pembaruan',
         },
       ],
     },
