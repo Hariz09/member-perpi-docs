@@ -1,4 +1,9 @@
-# 2. Upload Dokumen Persyaratan
+---
+id: new-member-document-upload
+title: Upload Dokumen Persyaratan
+sidebar_label: 3. Upload Dokumen Persyaratan
+sidebar_position: 3
+---
 
 :::info Langkah Ketiga
 Setelah melengkapi profil perusahaan, langkah selanjutnya adalah mengunggah dokumen-dokumen yang diperlukan untuk verifikasi keanggotaan.

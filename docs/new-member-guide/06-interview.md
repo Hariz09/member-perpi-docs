@@ -1,4 +1,9 @@
-# 5. Interview & Presentasi
+---
+id: new-member-interview
+title: Interview & Presentasi
+sidebar_label: 6. Interview & Presentasi
+sidebar_position: 6
+---
 
 :::info Langkah Keenam
 Setelah kunjungan kantor berhasil, tahap selanjutnya adalah interview dan presentasi company profile di kantor PERPI.

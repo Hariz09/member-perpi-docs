@@ -1,4 +1,9 @@
-# 1. Pengisian Profil Perusahaan
+---
+id: new-member-company-profile
+title: Pengisian Profil Perusahaan
+sidebar_label: 2. Pengisian Profil Perusahaan
+sidebar_position: 2
+---
 
 :::warning Pastikan Anda Telah Membuat Akun
 Sebelum melengkapi profil perusahaan, pastikan Anda sudah membuat akun dan login ke sistem. Jika belum, silakan baca terlebih dahulu: **[📖 Panduan Autentikasi](../tutorial-autentikasi-perpi.md)**

@@ -1,4 +1,9 @@
-# 6. Rapat Pleno
+---
+id: new-member-plenary-meeting
+title: Plenary Meeting
+sidebar_label: 7. Rapat Pleno
+sidebar_position: 7
+---
 
 :::info Langkah Ketujuh
 Rapat pleno adalah tahap akhir dalam proses seleksi keanggotaan. Pengurus PERPI akan membahas dan memutuskan aplikasi Anda.

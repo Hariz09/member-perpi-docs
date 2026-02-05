@@ -2,7 +2,7 @@
 id: admin-guide-overview
 title: Panduan Admin PERPI
 sidebar_label: Panduan Admin PERPI
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # Panduan Admin PERPI

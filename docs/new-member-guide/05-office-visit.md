@@ -1,4 +1,9 @@
-# 4. Kunjungan Kantor
+---
+id: new-member-office-visit
+title: Kunjungan Kantor
+sidebar_label: 5. Kunjungan Kantor
+sidebar_position: 5
+---
 
 :::info Langkah Kelima
 Setelah dokumen disetujui, tahap selanjutnya adalah kunjungan kantor oleh inspector PERPI untuk memverifikasi lokasi dan fasilitas operasional perusahaan Anda.

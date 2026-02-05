@@ -1,4 +1,9 @@
-# 7. Pembayaran & Aktivasi Keanggotaan
+---
+id: new-member-payment-activation
+title: Pembayaran & Aktivasi Keanggotaan
+sidebar_label: 8. Pembayaran & Aktivasi Keanggotaan
+sidebar_position: 8
+---
 
 :::info Langkah Terakhir
 Selamat! Aplikasi Anda telah disetujui. Langkah terakhir adalah melakukan pembayaran biaya pendaftaran dan aktivasi keanggotaan.

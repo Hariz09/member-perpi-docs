@@ -1,4 +1,9 @@
-# 3. Submit Aplikasi
+---
+id: new-member-application-submission
+title: Submit Aplikasi
+sidebar_label: 4. Submit Aplikasi
+sidebar_position: 4
+---
 
 :::info Langkah Keempat
 Setelah melengkapi profil dan upload semua dokumen, saatnya submit aplikasi Anda untuk direview oleh tim PERPI.
