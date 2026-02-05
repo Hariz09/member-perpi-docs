@@ -132,8 +132,8 @@ Finalisasi keanggotaan:
 
 | Item | Biaya |
 |------|-------|
-| Biaya Pendaftaran (Tahun Pertama) | Rp 7.500.000 |
-| Iuran Tahunan (Tahun Berikutnya) | Rp 5.000.000 |
+| Biaya Pendaftaran | Rp 7.500.000 |
+| Iuran Tahunan | Rp 5.000.000 |
 
 :::warning Penting
 Biaya pendaftaran hanya dibayarkan setelah aplikasi Anda **disetujui** dalam rapat pleno. Jangan melakukan pembayaran sebelum menerima notifikasi persetujuan resmi.
@@ -160,26 +160,13 @@ Anda dapat memantau status aplikasi Anda melalui dashboard. Berikut adalah statu
 
 ### Kontak PERPI
 
-- **Email**: info@perpi.or.id
-- **Telepon**: (021) xxxx-xxxx
-- **Alamat**: [Alamat Kantor PERPI]
-
-### FAQ (Frequently Asked Questions)
-
-**Q: Berapa lama proses persetujuan keanggotaan?**
-A: Rata-rata 2-3 bulan dari submit aplikasi hingga keputusan akhir.
-
-**Q: Apakah bisa mengajukan kembali jika ditolak?**
-A: Ya, Anda dapat mengajukan kembali setelah memperbaiki hal-hal yang menjadi alasan penolakan.
-
-**Q: Dokumen apa yang paling sering ditolak?**
-A: Biasanya Company Profile yang kurang lengkap atau Surat Pernyataan yang tidak sesuai format.
-
-**Q: Apakah harus memiliki kantor fisik?**
-A: Ya, salah satu persyaratan adalah memiliki kantor operasional yang akan diverifikasi melalui kunjungan.
-
-**Q: Bagaimana jika ada perubahan data setelah submit?**
-A: Hubungi tim PERPI melalui email atau telepon untuk update data.
+- **Email**: enoperpi@gmail.com
+- **Telepon**: +62 818 871 770
+- **Alamat**:
+MARQUEE
+Gd. Cyber 2 Tower 17
+Jl. HR. Rasuna Said Kav. 13
+Jakarta 12950 - Indonesia
 
 ## Tips Sukses
 
@@ -197,15 +184,4 @@ A: Hubungi tim PERPI melalui email atau telepon untuk update data.
    - Cek email secara berkala
    - Balas komunikasi dari tim PERPI dengan cepat
    - Siapkan diri untuk jadwal kunjungan dan interview
-
-4. **Persiapkan Presentasi dengan Matang**
-   - Buat company profile yang menarik
-   - Siapkan portfolio terbaik
-   - Latih presentasi sebelum hari H
-
-5. **Tunjukkan Komitmen**
-   - Pahami kode etik PERPI
-   - Tunjukkan keseriusan dalam proses
-   - Berpartisipasi aktif dalam setiap tahapan
-
 ---
