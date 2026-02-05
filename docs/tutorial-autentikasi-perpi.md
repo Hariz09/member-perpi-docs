@@ -224,11 +224,11 @@ graph TD
 
 Member memiliki status keanggotaan yang mempengaruhi akses:
 
-| Status | Akses | Keterangan |
-|--------|-------|------------|
-| `applicant` | `/applications/{id}` | Sedang proses aplikasi |
-| `active_member` | `/company/{id}` | Anggota aktif |
-| `inactive_member` | `/member/{id}/payment` | Member di nonaktifkan karena tidak membayar iuran |
+| Status | Keterangan |
+|--------|------------|
+| `applicant` | Sedang proses aplikasi |
+| `active_member` | Anggota aktif |
+| `inactive_member` | Member di nonaktifkan karena tidak membayar iuran |
 
 ---
 
