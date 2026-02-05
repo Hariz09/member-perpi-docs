@@ -18,29 +18,7 @@ Profil perusahaan adalah informasi lengkap tentang perusahaan Anda yang akan dir
 - Detail operasional (tahun berdiri, jumlah karyawan, dll)
 - Informasi keuangan (revenue range)
 
-**Estimasi Waktu**: 30-45 menit
-
 **Status Aplikasi**: `Mengisi Profil` → `Mengisi Dokumen`
-
-## Persiapan Data
-
-Sebelum mulai mengisi form, siapkan informasi berikut:
-
-### Dokumen Referensi
-- [ ] Akta Pendirian Perusahaan
-- [ ] NPWP Perusahaan
-- [ ] NIB (Nomor Induk Berusaha)
-- [ ] Surat Domisili
-- [ ] Kartu identitas PIC
-
-### Informasi yang Diperlukan
-- [ ] Data lengkap perusahaan
-- [ ] Alamat kantor yang detail
-- [ ] Nomor telepon kantor yang aktif
-- [ ] Data PIC yang akan menjadi contact person
-- [ ] Informasi operasional perusahaan
-
-## Langkah 1: Akses Form Profil Perusahaan
 
 ### Cara Mengakses
 
@@ -49,21 +27,21 @@ Setelah login pertama kali, Anda akan otomatis diarahkan ke halaman aplikasi:
 1. **URL**: `/applications/[companyId]`
 2. **Navigasi**: Dashboard → Tab "Informasi Perusahaan"
 
-![Tampilan Awal](../img/new-member/company-profile/landing.png)
+<img src="/img/new-member/company-profile/landing.png" alt="Landing Page" className="img-large" />
+
 
 ### Tampilan Awal
 
 Anda akan melihat:
 1. Header aplikasi yang berisi data perusahaan di bagian kiri, dan informasi aplikasi di sebelah kanan
-2. Progress bar beserta tab yang menunjakan langkah-langkah aplikasi.
+2. Tab yang menunjakan langkah-langkah dan progress aplikasi.
 
 Jika anda scroll kebawah anda akan melihat form data perusahaan
 
 
 ## Langkah 2: Isi Data PIC (Person in Charge)
 
-### Section: Informasi PIC
-![Form PIC](../img/new-member/company-profile/form_1_pic.png)
+<img src="/img/new-member/company-profile/form_1_pic.png" alt="Form PIC" className="img-large"/>
 
 PIC adalah orang yang bertanggung jawab dan menjadi contact person utama.
 
@@ -100,9 +78,7 @@ Nama PIC akan digunakan dalam semua komunikasi resmi. Pastikan menggunakan nama 
 - **Format**: Teks panjang
 
 ## Langkah 3: Isi Data Perusahaan
-
-### Section: Informasi Perusahaan
-![Form Informasi Perusahaan](../img/new-member/company-profile/form_2_company-info.png)
+<img src="/img/new-member/company-profile/form_2_company_info.png" alt="Form Perusahaan" className="img-large"/>
 
 #### 1. Nama Perusahaan
 - **Format**: Nama resmi perusahaan
@@ -128,8 +104,7 @@ Website akan ditampilkan di profil perusahaan. Pastikan:
 :::
 
 ## Langkah 4: Isi Alamat Kantor
-### Section: Alamat Kantor
-![Form Alamat Kantor](../img/new-member/company-profile/form_3_address.png)
+<img src="/img/new-member/company-profile/form_3_address.png" alt="Form Alamat" className="img-large"/>
 
 :::warning Penting
 Alamat ini akan diverifikasi melalui kunjungan kantor. Pastikan:
@@ -174,10 +149,10 @@ Informasi lengkap tentang layanan, sumber daya manusia, dan keuangan perusahaan
 
 ---
 
-#### A. Section: Layanan dan Teknologi
-![Form Informasi Operasional](../img/new-member/company-profile/form_4_operational-info.png)
+### A. Section: Layanan dan Teknologi
+<img src="/img/new-member/company-profile/form_4_operational_info.png" alt="Form Layanan dan Teknologi" className="img-large"/>
 
-##### 1. Industri yang Didukung *
+##### 1. Industri yang Didukung
 - **Format**: Single select dropdown
 - **Opsi**:
   - Pertanian
@@ -209,9 +184,11 @@ Pilih industri utama yang menjadi fokus atau spesialisasi perusahaan riset Anda.
 
 ---
 
-#### B. Section: Sumber Daya Manusia
-![Form Sumber Daya Manusia](../img/new-member/company-profile/form_5_human-resources.png)
-##### 1. Jenis Karyawan *
+### B. Section: Sumber Daya Manusia
+
+<img src="/img/new-member/company-profile/form_5_human_resources.png" alt="Form Sumber Daya Manusia" className="img-large"/>
+
+##### 1. Jenis Karyawan
 - **Format**: Multi select (checkbox)
 - **Opsi**:
   - Full-time
@@ -238,8 +215,9 @@ Tim pendukung mencakup staf administrasi, IT, keuangan, HR, dan fungsi support l
 
 ---
 
-#### C. Section: Informasi Pendapatan
-![Form Informasi Pendapatan](../img/new-member/company-profile/form_6_income.png)
+### C. Section: Informasi Pendapatan
+
+<img src="/img/new-member/company-profile/form_6_revenue.png" alt="Form Informasi Pendapatan" className="img-large"/>
 
 ##### 1. Rentang Pendapatan Tahunan
 - **Format**: Single select dropdown
@@ -247,7 +225,7 @@ Tim pendukung mencakup staf administrasi, IT, keuangan, HR, dan fungsi support l
   - < 10 Miliar Rupiah
   - 10–30 Miliar Rupiah
   - 31–50 Miliar Rupiah
-  - > 50 Miliar Rupiah
+  - \> 50 Miliar Rupiah
 - **Deskripsi**: Pilih rentang pendapatan tahunan perusahaan
 
 :::info Kerahasiaan
@@ -277,8 +255,42 @@ Total persentase dari riset kualitatif dan non-kualitatif harus sama dengan 100%
 - Pastikan kedua persentase totalnya = 100%
 :::
 
-#### D. Section: Logo (Opsional)
-![Form Logo](../img/new-member/company-profile/form_7_logo.png)
+### D. Section: Informasi Legal & Keuangan
+
+<img src="/img/new-member/company-profile/form_7_informasi_legal_keuangan.png" alt="Form Informasi Legal & Keuangan" className="img-large"/>
+
+##### 1. Nama Legal Perusahaan
+- **Format**: Nama resmi perusahaan
+- **Validasi**: 
+  - Minimal 2 karakter
+  - Maksimal 255 karakter
+- **Contoh**: "PT Riset Pasar Indonesia"
+- **Deskripsi**: Nama perusahaan sesuai akta pendirian
+
+##### 2. Penerima Invoice (Attention) 
+- **Format**: Nama penerima invoice
+- **Validasi**: 
+  - Minimal 2 karakter
+  - Maksimal 255 karakter
+- **Contoh**: "Budi Santoso"
+- **Deskripsi**: Nama penerima invoice yang ditujukan untuk menerima invoice pembayaran
+
+##### 3. Nama Finance
+- **Format**: Nama finance
+- **Validasi**: 
+  - Minimal 2 karakter
+  - Maksimal 255 karakter
+- **Contoh**: "Budi Santoso"
+- **Deskripsi**: Nama finance perusahaan yang bertanggung jawab terhadap keuangan perusahaan
+
+##### 4. Email Finance
+- **Format**: Email valid
+- **Validasi**: Harus diisi dengan email aktif
+- **Contoh**: "finance@perpi.or.id"
+- **Deskripsi**: Email finance perusahaan untuk tujuan komunikasi keuangan (akan menerima email invoice dan sertifikat)
+
+### E. Section: Logo (Opsional)
+<img src="/img/new-member/company-profile/form_8_logo.png" alt="Form Logo" className="img-large"/>
 
 ##### 1. Logo Perusahaan
 - **Format**: Gambar (JPG, PNG)
@@ -299,18 +311,15 @@ Sebelum menyimpan, sistem akan memvalidasi:
 2. **Format Data**: Email, telepon, dll harus sesuai format
 3. **Panjang Karakter**: Sesuai batasan minimal/maksimal
 
-:::tip Screenshot
-📸 **Path Screenshot**: Form dengan error validation
-- Field yang error ditandai dengan border merah
-- Pesan error di bawah field
-- Scroll otomatis ke field pertama yang error
-:::
-
 ### Simpan Data
 
-1. **Klik Tombol "Simpan Profil"**
+1. **Klik Tombol "Lanjut ke Dokumen"**
    - Tombol ada di bagian bawah form
-   - Loading indicator akan muncul
+   - Modal konfirmasi akan muncul
+
+<img src="/img/new-member/company-profile/form_submit.png" alt="Form Submit" className="img-large"/>
+<img src="/img/new-member/company-profile/form_submit_confirmation_modal.png" alt="Form Submit Confirmation Modal" className="img-large"/>
+
 
 2. **Konfirmasi Sukses**
    - Toast notification "Profil berhasil disimpan"
@@ -319,25 +328,7 @@ Sebelum menyimpan, sistem akan memvalidasi:
    - Navigation card "Dokumen" berubah jadi "Berlangsung" (biru)
 
 Contoh field yang error:
-![Field Error](../img/new-member/company-profile/form_invalid.png)
-
-## Langkah 7: Edit Profil (Jika Diperlukan)
-
-### Kapan Perlu Edit?
-
-- Ada kesalahan data
-- Ada perubahan informasi
-- Diminta revisi oleh tim PERPI
-
-### Cara Edit
-
-1. Kembali ke tab "Informasi Perusahaan"
-2. Edit field yang perlu diubah
-3. Klik "Simpan Profil" lagi
-
-:::warning Penting
-Setelah aplikasi disubmit, Anda tidak bisa edit profil kecuali diminta revisi oleh tim PERPI.
-:::
+<img src="/img/new-member/company-profile/form_invalid.png" alt="Invalid Form" className="img-large"/>
 
 ## Tips Sukses
 
@@ -360,8 +351,6 @@ Setelah aplikasi disubmit, Anda tidak bisa edit profil kecuali diminta revisi ol
    - Cek ulang semua data sebelum simpan
    - Pastikan nomor telepon bisa dihubungi
    - Pastikan email aktif
-
-➡️ **[Lanjut ke: Upload Dokumen Persyaratan](./02-document-upload.md)**
 
 Di langkah selanjutnya, Anda akan:
 - Menyiapkan dokumen-dokumen yang diperlukan
