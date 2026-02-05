@@ -33,11 +33,7 @@ Tutorial ini menjelaskan cara menggunakan sistem autentikasi lengkap pada [aplik
 2. **Masukkan Password**: Ketik kata sandi Anda
 3. **Klik Tombol "Masuk"**: Sistem akan memverifikasi kredensial Anda
 
-<div style={{ width: '60%', margin: '0 auto' }}>
-
-![Login Page](/img/auth/login.png)
-
-</div>
+<img src="/img/auth/login.png" alt="Success Signup Page" className="img-small" />
 
 ### Fitur Login
 
