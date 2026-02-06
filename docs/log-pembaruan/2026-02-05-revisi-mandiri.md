@@ -20,7 +20,7 @@ Pembaruan ini menghadirkan fitur manajemen data mandiri (*self-service*) untuk t
 
 ### 1. Revisi Invoice & Sertifikat (Self-Service)
 
-Fitur ini memungkinkan Anda mencetak ulang dokumen PDF dengan data terbaru tanpa mengajukan tiket ke IT.
+Fitur ini memungkinkan Anda mencetak ulang dokumen PDF invoice dan sertifikat dengan data terbaru.
 
 <div className="row">
   <div className="col col--6">
