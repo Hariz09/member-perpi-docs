@@ -1,63 +1,234 @@
-/* --- HERO SECTION --- */
+/* ==========================================================================
+   PERPI MEMBER MANAGEMENT - HOMEPAGE STYLES
+   ========================================================================== */
+
+:root {
+  /* --- Palette --- */
+  --home-color-primary: #2563eb;
+  --home-color-primary-dark: #1d4ed8;
+  --home-color-white: #ffffff;
+  
+  /* --- Gradients --- */
+  --home-hero-bg-light: linear-gradient(135deg, var(--home-color-primary) 0%, var(--home-color-primary-dark) 100%);
+  --home-hero-bg-dark: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  
+  /* --- Spacing --- */
+  --home-spacing-hero-y: 8rem;
+  --home-spacing-hero-x: 2rem;
+  --home-spacing-section-y: 5rem;
+}
+
+/* ========================================= */
+/* 1. HERO SECTION                           */
+/* ========================================= */
+
 .heroBanner {
-  padding: 6rem 0; 
-  text-align: center;
+  /* Layout & Positioning */
   position: relative;
   overflow: hidden;
-  /* Kita hapus color global disini, kita set spesifik di elemen bawah */
+  padding: var(--home-spacing-hero-y) var(--home-spacing-hero-x);
+  text-align: center;
+
+  /* Visuals */
+  background: var(--home-hero-bg-light);
+  background-size: cover;
+  background-position: center;
 }
 
-/* --- JUDUL UTAMA (H1) --- */
+[data-theme='dark'] .heroBanner {
+  background: var(--home-hero-bg-dark);
+}
+
 .heroTitle {
-  font-size: 3.5rem; 
-  font-weight: 800; 
-  line-height: 1.2;
+  /* Layout */
   margin-bottom: 1.5rem;
-  
-  /* PENTING: Memaksa warna putih di Light & Dark Mode */
-  color: #ffffff !important; 
+
+  /* Typography */
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--home-color-white) !important;
+
+  /* Visuals */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* --- SUBTITLE --- */
 .heroSubtitle {
+  /* Layout */
+  max-width: 700px;
+  margin: 0 auto 3rem;
+
+  /* Typography */
   font-size: 1.5rem;
   font-weight: 400;
-  max-width: 800px;
-  margin: 0 auto; 
-  margin-bottom: 2.5rem;
-  
-  /* PENTING: Warna putih agak transparan dikit biar elegan */
-  color: rgba(255, 255, 255, 0.9) !important;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.95) !important;
+
+  /* Visuals */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* --- CONTAINER TOMBOL --- */
+/* ========================================= */
+/* 2. BUTTONS (COMPONENT)                    */
+/* ========================================= */
+
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 24px; 
+  gap: 1rem;
 }
 
-/* --- INTRO SECTION --- */
-.introSection {
-  padding: 4rem 0;
+/* Shared Button Styles (DRY) */
+.buttonPrimary,
+.buttonSecondary {
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Primary Button Variant */
+.buttonPrimary {
+  background-color: var(--home-color-white);
+  color: var(--home-color-primary-dark) !important;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.buttonPrimary:hover {
+  transform: translateY(-2px);
+  background-color: #f8fafc;
+  color: #1e3a8a !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.buttonPrimary:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button Variant */
+.buttonSecondary {
+  background-color: transparent;
+  color: var(--home-color-white) !important;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.buttonSecondary:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--home-color-white);
+  color: var(--home-color-white) !important;
+}
+
+.buttonSecondary:active {
+  transform: translateY(0);
+}
+
+/* ========================================= */
+/* 3. WELCOME SECTION                        */
+/* ========================================= */
+
+.welcomeSection {
+  padding: var(--home-spacing-section-y) 2rem;
   text-align: center;
-  /* Warna teks intro kembali mengikuti tema (Hitam di Light, Putih di Dark) */
-  color: var(--ifm-font-color-base); 
-  background-color: var(--ifm-background-color);
+  background-color: var(--ifm-background-color); /* Inherit from Docusaurus */
+  border-top: 1px solid transparent;
 }
 
-/* --- RESPONSIF --- */
+[data-theme='dark'] .welcomeSection {
+  background-color: var(--ifm-background-surface-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.welcomeContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcomeTitle {
+  margin-bottom: 1.5rem;
+  color: var(--ifm-heading-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.welcomeDescription {
+  margin: 0;
+  color: var(--ifm-font-color-base);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* ========================================= */
+/* 4. RESPONSIVE DESIGN                      */
+/* ========================================= */
+
+/* Tablet (max-width: 996px) */
 @media screen and (max-width: 996px) {
-  .heroBanner { padding: 4rem 0; }
-  .heroTitle { font-size: 2.5rem; }
-  .heroSubtitle { font-size: 1.2rem; padding: 0 1rem; }
+  :root {
+    --home-spacing-hero-y: 6rem;
+    --home-spacing-section-y: 4rem;
+  }
   
+  .heroBanner { padding: var(--home-spacing-hero-y) 1.5rem; }
+  .heroTitle { font-size: 3rem; }
+  .heroSubtitle { font-size: 1.25rem; margin-bottom: 2.5rem; }
+  
+  .welcomeSection { padding: var(--home-spacing-section-y) 1.5rem; }
+  .welcomeTitle { font-size: 2rem; }
+  .welcomeDescription { font-size: 1.125rem; }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  :root {
+    --home-spacing-hero-y: 4rem;
+    --home-spacing-section-y: 3rem;
+  }
+
+  .heroBanner { padding: var(--home-spacing-hero-y) 1rem; }
+  .heroTitle { font-size: 2.25rem; }
+  
+  .heroSubtitle {
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+    font-size: 1.125rem;
+  }
+
   .buttons {
     flex-direction: column;
-    gap: 16px;
     width: 100%;
-    padding: 0 2rem;
+    max-width: 400px;
+    margin: 0 auto;
   }
-  .buttons a { width: 100%; }
+
+  /* Full width buttons on mobile */
+  .buttonPrimary,
+  .buttonSecondary {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .welcomeSection { padding: var(--home-spacing-section-y) 1rem; }
+  .welcomeTitle { font-size: 1.75rem; }
+  .welcomeDescription { font-size: 1rem; }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  :root {
+    --home-spacing-hero-y: 3rem;
+  }
+
+  .heroTitle { font-size: 2rem; }
+  .heroSubtitle { font-size: 1rem; }
+  .welcomeTitle { font-size: 1.5rem; }
 }

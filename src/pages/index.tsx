@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -7,47 +7,95 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
+// =============================================================================
+// CONFIGURATION & CONTENT
+// =============================================================================
+
+const HOMEPAGE_CONTENT = {
+  hero: {
+    subtitle: 'Pusat Dokumentasi & Informasi Sistem Manajemen Anggota',
+    actions: [
+      {
+        label: 'Panduan Pengguna',
+        to: '/docs/tutorial-autentikasi-perpi',
+        style: styles.buttonPrimary,
+      },
+      {
+        label: 'Log Pembaruan',
+        to: '/docs/log-pembaruan',
+        style: styles.buttonSecondary,
+      },
+    ],
+  },
+  welcome: {
+    title: 'Selamat Datang',
+    description: 'Temukan cara penggunaan aplikasi dan informasi rilis fitur terbaru di sini.',
+  },
+};
+
+// =============================================================================
+// COMPONENTS
+// =============================================================================
+
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
+  const { subtitle, actions } = HOMEPAGE_CONTENT.hero;
+
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className={styles.heroTitle}>
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">
-          Pusat Dokumentasi & Informasi Sistem Manajemen Anggota
-        </p>
+        
+        <p className={styles.heroSubtitle}>{subtitle}</p>
+
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/tutorial-autentikasi-perpi">
-            Panduan Pengguna
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            style={{ marginLeft: '1rem' }}
-            to="/docs/log-pembaruan">
-            Log Pembaruan
-          </Link>
+          {actions.map((action, idx) => (
+            <Link
+              key={idx}
+              className={clsx('button button--lg', action.style)}
+              to={action.to}>
+              {action.label}
+            </Link>
+          ))}
         </div>
       </div>
     </header>
   );
 }
 
+function WelcomeSection() {
+  const { title, description } = HOMEPAGE_CONTENT.welcome;
+
+  return (
+    <section className={styles.welcomeSection}>
+      <div className="container">
+        <div className={styles.welcomeContent}>
+          <Heading as="h2" className={styles.welcomeTitle}>
+            {title}
+          </Heading>
+          <p className={styles.welcomeDescription}>{description}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// =============================================================================
+// MAIN PAGE
+// =============================================================================
+
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
+  
   return (
     <Layout
       title={siteConfig.title}
-      description="Pusat Dokumentasi & Informasi Sistem Manajemen Anggota PERPI">
+      description={HOMEPAGE_CONTENT.hero.subtitle}>
       <HomepageHeader />
       <main>
-        <div className="container" style={{ padding: '4rem 0', textAlign: 'center' }}>
-          <h3>Selamat Datang</h3>
-          <p>Temukan cara penggunaan aplikasi dan informasi rilis fitur terbaru di sini.</p>
-        </div>
+        <WelcomeSection />
       </main>
     </Layout>
   );
