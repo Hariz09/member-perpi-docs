@@ -1,9 +1,13 @@
+/**
+ * CUSTOM.CSS - PERPI Member Management Docs
+ * Theme: Deep Ocean Blue
+ */
+
+/* ========================================= */
+/* 1. VARIABLE DEFINITIONS (Light Mode)      */
+/* ========================================= */
 :root {
-  /* --- PALET BRAND: DEEP OCEAN BLUE --- */
-  --brand-color-pure: #1e293b; /* Lebih ke Slate agar teks di atasnya lebih nyaman */
-  --brand-accent: #2563eb;    /* Biru yang lebih modern untuk aksen */
-  
-  /* Palet Light Mode (Optimasi Kontras) */
+  /* Brand Palette (Primary Blue) */
   --ifm-color-primary: #2563eb;
   --ifm-color-primary-dark: #1d4ed8;
   --ifm-color-primary-darker: #1e40af;
@@ -12,133 +16,84 @@
   --ifm-color-primary-lighter: #60a5fa;
   --ifm-color-primary-lightest: #93c5fd;
 
-  /* Text & BG Light Mode */
-  --ifm-font-color-base: #334155;     /* Abu-abu gelap, lebih lembut dari hitam */
-  --ifm-heading-color: #0f172a;      /* Sangat gelap untuk hirarki yang jelas */
-  --ifm-background-color: #f8fafc;   /* Putih "bersih" tapi tidak menyilaukan */
+  /* Base Typography & Background */
+  --ifm-code-font-size: 95%;
+  --ifm-font-color-base: #334155;     /* Slate 700 */
+  --ifm-heading-color: #0f172a;       /* Slate 900 */
+  --ifm-background-color: #f8fafc;    /* Slate 50 */
   
   --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.1);
 }
 
-/* --- KONFIGURASI DARK MODE (SOFT DARK) --- */
+/* ========================================= */
+/* 2. DARK MODE CONFIGURATION (Deep Ocean)   */
+/* ========================================= */
 [data-theme='dark'] {
-  --ifm-color-primary: #60a5fa;      /* Biru pastel agar tidak "menusuk" mata */
+  /* Adjusted Primary Colors for Dark Background (Soft Blue) */
+  --ifm-color-primary: #60a5fa;
   --ifm-color-primary-dark: #3b82f6;
   --ifm-color-primary-darker: #2563eb;
   --ifm-color-primary-darkest: #1d4ed8;
   --ifm-color-primary-light: #93c5fd;
   --ifm-color-primary-lighter: #bfdbfe;
   --ifm-color-primary-lightest: #dbeafe;
+
+  /* Backgrounds: Deep Slate Blue */
+  --ifm-background-color: #0f172a;        /* Main BG */
+  --ifm-background-surface-color: #1e293b; /* Sidebar/Surface BG */
   
-  /* Background Dark Mode (Deep Slate) */
-  /* Memberikan kesan kedalaman tanpa kontras yang melelahkan */
-  --ifm-background-color: #0f172a; 
-  --ifm-background-surface-color: #1e293b;
+  /* CRITICAL FIX: Navbar & Mobile Sidebar Background */
+  --ifm-navbar-background-color: #0f172a; 
   
-  /* Teks Dark Mode */
-  --ifm-font-color-base: #cbd5e1;    /* Abu-abu terang, bukan putih murni */
-  --ifm-heading-color: #f1f5f9;      /* Off-white untuk kenyamanan */
+  /* Text Colors */
+  --ifm-font-color-base: #cbd5e1;     /* Slate 300 */
+  --ifm-heading-color: #f1f5f9;       /* Slate 100 */
+  --ifm-menu-color: #e2e8f0;          /* Sidebar Text */
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* --- PENYESUAIAN KOMPONEN --- */
+/* ========================================= */
+/* 3. COMPONENT OVERRIDES                    */
+/* ========================================= */
 
-/* 1. TOMBOL PRIMARY */
+/* --- NAVBAR & SIDEBAR --- */
+/* Memastikan Sidebar Mobile menggunakan warna variabel yang benar */
+.navbar-sidebar {
+  background-color: var(--ifm-navbar-background-color);
+}
+
+/* Memberikan garis pemisah halus pada sidebar desktop & mobile */
+[data-theme='dark'] .navbar,
+[data-theme='dark'] .navbar-sidebar {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- BUTTONS --- */
 .button--primary {
-  background-color: var(--ifm-color-primary) !important;
-  border-color: var(--ifm-color-primary) !important;
-  color: #fff !important;
   font-weight: 600;
+  color: #fff !important; /* Force text white on primary buttons */
 }
 
-/* 2. NAVBAR */
-[data-theme='dark'] .navbar {
-  background-color: #0f172a; /* Konsisten dengan background */
-  border-bottom: 1px solid #1e293b;
-  backdrop-filter: blur(8px); /* Efek modern */
-}
-
-/* 3. SIDEBAR ACTIVE ITEM */
-[data-theme='dark'] .menu__link--active {
-  background-color: rgba(96, 165, 250, 0.15); /* Transparan lembut */
-  color: var(--ifm-color-primary);
-}
-
-/* 4. CODE BLOCKS */
-pre {
-  border: 1px solid rgba(0,0,0,0.1);
-}
-[data-theme='dark'] pre {
-  border: 1px solid rgba(255,255,255,0.05);
-  background-color: #1e293b !important;
-}
-
-/* Memberikan frame otomatis pada semua gambar di konten Markdown */
+/* --- IMAGES & MEDIA --- */
+/* Styling modern untuk gambar di dalam konten Markdown */
 .markdown img {
-  display: block;
-  margin: 2rem auto;          /* Posisi tengah dengan jarak atas-bawah */
-  border-radius: 12px;        /* Sudut melengkung agar modern */
-  border: 1px solid var(--ifm-color-emphasis-200); /* Border tipis yang adaptif */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
-              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Shadow halus */
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease; /* Animasi saat di-hover */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid transparent; /* Placeholder border */
 }
 
-/* Efek sedikit zoom saat gambar di-hover (Opsional) */
-.markdown img:hover {
-  transform: scale(1.01);
-  border-color: var(--ifm-color-primary); /* Border berubah jadi biru brand saat di-hover */
-}
-
-/* Menyesuaikan border untuk Dark Mode agar tidak terlalu mencolok */
 [data-theme='dark'] .markdown img {
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
-figcaption {
-  font-size: 0.9rem;
-  color: var(--ifm-color-emphasis-600);
-  margin-top: -1.5rem;
-  margin-bottom: 2rem;
-  font-style: italic;
-  text-align: center;
-}
-
-/* --- UKURAN GAMBAR CUSTOM --- */
-/* Gunakan dengan HTML: <img src="..." class="img-small" /> */
-
-/* --- UKURAN GAMBAR CUSTOM RESPONSIVE --- */
-
-/* Base class agar semua gambar custom tidak melebihi container dan tetap proporsional */
-.img-xs, .img-small, .img-medium, .img-large, .img-xl, .img-full {
-  width: 100%;
-  height: auto;
-  display: block; /* Opsional: Agar tidak ada gap di bawah gambar */
-  margin: 1rem 0; /* Memberi jarak atas bawah agar tidak menempel teks */
-}
-
-.img-xs {
-  max-width: 300px !important;
-}
-
-.img-small {
-  max-width: 400px !important;
-}
-
-.img-medium {
-  max-width: 600px !important;
-}
-
-.img-large {
-  max-width: 800px !important;
-}
-
-.img-xl {
-  max-width: 1000px !important;
-}
-
-.img-full {
-  max-width: 100% !important;
-}
+/* --- UTILITIES --- */
+/* Helper classes untuk ukuran gambar */
+.img-xs { max-width: 300px; }
+.img-small { max-width: 400px; }
+.img-medium { max-width: 600px; }
+.img-large { max-width: 800px; }
+.img-full { width: 100%; }
