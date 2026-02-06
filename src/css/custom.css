@@ -91,6 +91,12 @@
 }
 
 /* --- UTILITIES --- */
+.img-xs, .img-small, .img-medium, .img-large, .img-xl, .img-full {
+  width: 100%;
+  height: auto;
+  display: block; /* Opsional: Agar tidak ada gap di bawah gambar */
+  margin: 1rem 0; /* Memberi jarak atas bawah agar tidak menempel teks */
+}
 /* Helper classes untuk ukuran gambar */
 .img-xs { max-width: 300px; }
 .img-small { max-width: 400px; }
