@@ -94,8 +94,6 @@ Sistem akan memvalidasi:
 - **Ukuran**: Maksimal 5MB
 - **Nama File**: Sebaiknya deskriptif
 
-<img src="/img/new-member/document-upload/validasi.png" alt="Tombol Upload" className="img-small"/>
-
 :::warning Validasi
 Jika file tidak sesuai, akan muncul error:
 - "File harus berformat PDF"
