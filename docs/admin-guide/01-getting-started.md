@@ -14,153 +14,113 @@ Sebelum memulai pastikan anda sudah membuat/meminta akun ke pengurus perpi, untu
 :::
 ---
 
-## 🏠 Dashboard Berdasarkan Peran
+# Overview Dashboard
 
-### Dashboard Leader
+Halaman ini menjelaskan antarmuka utama sistem PERPI yang disesuaikan berdasarkan hak akses pengguna: **Leader**, **Committee**, dan **Finance**.
 
-<!-- ![Leader Dashboard](./screenshots/01-leader-dashboard.png) -->
-*Screenshot: Dashboard Leader dengan statistics cards dan menu lengkap*
+---
+
+## 👑 Dashboard Leader
+
+Pusat pemantauan eksekutif untuk melihat kesehatan organisasi secara menyeluruh.
+
+<img src="/img/admin/leader/dashboard.png" alt="Dashboard Leader" className="img-large" />
+
+### Komponen Utama
+
+:::info Struktur Halaman
+Dashboard Leader terbagi menjadi dua area strategi: **Monitoring (Metrik)** di bagian atas dan **Action Items (Tugas)** di bagian bawah.
+:::
 
 **Komponen Utama**:
 
-1. **Welcome Banner**
-   <!-- ![Welcome Banner](./screenshots/01-leader-welcome.png) -->
-   *Menampilkan nama dan peran Anda*
+1.  **Sidebar Toggle & Header**
+    * Tombol untuk menyembunyikan/menampilkan navigasi dan identitas "Admin PERPI".
 
-2. **Statistics Cards**
-   <!-- ![Statistics Cards](./screenshots/01-leader-stats.png) -->
-   *9 cards dengan data real-time: Total Aplikasi, Under Review, Approved, Active Members, dll*
+2.  **Navigasi Utama (Sidebar)**
+    * Menu navigasi lengkap untuk mengakses seluruh modul aplikasi.
 
-3. **Sidebar Menu**
-   <!-- ![Sidebar Menu](./screenshots/01-leader-sidebar.png) -->
-   *Menu navigasi lengkap dengan icons*
+3.  **Welcome Banner & Status Panel**
+    * **Greeting:** Sapaan personal ("Halo, Leader") dengan ringkasan aktivitas.
+    * **System Status:** Indikator "Sistem Aktif" dan jumlah total anggota.
+    * **Real-time Clock:** Widget waktu (Jam/Tanggal) zona WIB (UTC+7).
 
-**Menu yang Tersedia**:
-- 🏠 Beranda
-- 📋 Aplikasi
-- ✅ Daftar Tugas
-- 📍 Kunjungan Kantor
-- 👤 Wawancara
-- 📅 Rapat Pleno
-- 🏢 Perusahaan
-- 👥 **Pengguna** *(Leader only)*
-- 💳 Iuran Tahunan
+4.  **Metrik Utama (Total Keseluruhan)**
+    * Berisi 4 kartu ringkasan data historis/total:
+        * **Total Aplikasi:** Jumlah seluruh aplikasi keanggotaan.
+        * **Disetujui:** Jumlah aplikasi yang berhasil menjadi anggota.
+        * **Total Perusahaan:** Jumlah perusahaan terdaftar.
+        * **Anggota Aktif:** Status keanggotaan yang aktif saat ini.
+
+5.  **Memerlukan Perhatian (Action Items)**
+    * Berisi 4 kartu notifikasi untuk tugas yang tertunda (Counter angka berwarna oranye/ungu/biru):
+        * **Aplikasi Baru:** Permohonan masuk yang belum diproses.
+        * **Menunggu Pleno:** Kandidat yang menunggu jadwal/hasil rapat.
+        * **Wawancara:** Jadwal atau hasil wawancara yang pending.
+        * **Kunjungan Kantor:** Tugas kunjungan yang perlu ditindaklanjuti.
+
+**Daftar Menu Navigasi**:
+
+- 🏠 **Beranda**
+- 📋 **Aplikasi**
+- ✅ **Daftar Tugas**
+- 📍 **Kunjungan Kantor**
+- 👤 **Wawancara**
+- 📅 **Rapat Pleno**
+- 🏢 **Perusahaan**
+- 👥 **Pengguna**
+- 💳 **Iuran Tahunan**
+- 📝 **Logs** *(Dropdown)*
 
 ---
 
-### Dashboard Committee
+## 👷 Dashboard Committee
 
-<!-- ![Committee Dashboard](./screenshots/01-committee-dashboard.png) -->
-*Screenshot: Dashboard Committee dengan task list*
+Halaman kerja operasional (Daftar Tugas) untuk pengurus yang fokus pada inspeksi lapangan dan verifikasi.
 
-Dashboard committe hanya akan menampilkan daftar tugas dan riwayat tugas yang ditangani.
+<img src="/img/admin/committee/dashboard.png" alt="Dashboard Committee" className="img-large" />
 
----
+### Manajemen Tugas
 
-### Dashboard Finance
-
-<!-- ![Finance Dashboard](./screenshots/01-finance-dashboard.png) -->
-*Screenshot: Dashboard Finance dengan payment statistics*
-
-**Komponen Utama**:
-
-1. **Payment Statistics**
-   <!-- ![Payment Stats](./screenshots/01-finance-stats.png) -->
-   *6 cards dengan data pembayaran: Total, Paid, Unpaid, Waiting Invoice, dll*
-
-2. **Recent Payments**
-   <!-- ![Recent Payments](./screenshots/01-finance-recent.png) -->
-   *Tabel pembayaran terbaru yang perlu diproses*
-
-**Menu yang Tersedia**:
-- 🏠 Beranda
-- 💳 Iuran Tahunan
-- 📄 Invoice
-- ✅ Verifikasi Pembayaran
-- 📜 Sertifikat
-
-:::tip Fokus Finance
-✅ Upload invoice
-✅ Verifikasi pembayaran
-✅ Generate sertifikat
-❌ Tidak akses aplikasi
+:::tip Tips Produktivitas
+Gunakan tombol **Refresh** di sebelah kanan atas daftar tugas untuk memastikan Anda melihat data penugasan terbaru tanpa perlu memuat ulang (*reload*) halaman browser.
 :::
 
----
+#### 1. Ringkasan Penugasan
+Tiga kartu indikator beban kerja saat ini:
+* 📍 **Inspeksi:** Tugas kunjungan fisik ke kantor pendaftar.
+* 👤 **Wawancara:** Sesi wawancara calon anggota.
+* 📋 **Rapat Pleno:** Agenda rapat validasi anggota.
 
-## 🧭 Cara Menggunakan Navigasi
-
-### Sidebar Menu
-
-<!-- ![Sidebar Navigation](./screenshots/01-sidebar-navigation.png) -->
-*Screenshot: Sidebar menu dengan icons dan labels*
-
-**Cara Membuka Menu**:
-1. Klik icon menu di pojok kiri atas
-2. Sidebar akan expand menampilkan semua menu
-3. Klik menu yang ingin diakses
-
-<!-- ![Sidebar Collapsed](./screenshots/01-sidebar-collapsed.png) -->
-*Screenshot: Sidebar dalam mode collapsed (hanya icons)*
+#### 2. Filter & Pencarian
+Gunakan panel filter untuk menemukan tugas spesifik:
+* **Pencarian:** Input nama perusahaan.
+* **Jenis Tugas:** Filter kategori (misal: hanya tampilkan "Wawancara").
+* **Status:** Memisahkan tugas *Pending* dan *Selesai*.
 
 ---
 
-### Top Bar
+## 💰 Dashboard Finance
 
-<!-- ![Top Bar](./screenshots/01-topbar.png) -->
-*Screenshot: Top bar dengan profile menu dan notifications*
+Area khusus untuk Tim Keuangan dalam mengelola tagihan (Invoice) dan validasi pembayaran iuran anggota.
 
-**Komponen Top Bar**:
-1. **Notifications** 🔔
-   <!-- ![Notifications](./screenshots/01-notifications.png) -->
-   *Klik untuk lihat notifikasi terbaru*
+<img src="/img/admin/finance/dashboard.png" alt="Dashboard Finance" className="img-large" />
 
-2. **Profile Menu** 👤
-   <!-- ![Profile Menu](./screenshots/01-profile-menu.png) -->
-   *Klik nama Anda untuk:*
-   - View Profile
-   - Settings
-   - **Logout**
+### Tabel Invoice
+Menampilkan daftar tagihan dengan rincian:
+
+* **Perusahaan:** Nama entitas & Tahun Buku (misal: 2027).
+* **No. Invoice:** Kode unik referensi `AFP-YYYY.XXXX`.
+* **Jumlah:** Nominal tagihan (IDR).
+* **Status:** Indikator warna (e.g., 🔴 *Belum Dibayar*, 🟢 *Lunas*).
+* **Aksi:** Tombol aksi berdasarkan status (misal: *Upload Invoice*, *Verifikasi Pembayaran*).
 
 ---
 
-## 🔔 Notifikasi Email
+:::note 📧 Notifikasi Sistem Otomatis
+Sistem akan mengirimkan notifikasi email secara otomatis untuk trigger penting (Penugasan baru, Invoice terbit, Status berubah).
 
-<!-- ![Email Notification](./screenshots/01-email-notification.png) -->
-*Screenshot: Contoh email notifikasi dari sistem*
+Seluruh notifikasi resmi dikirim dari: **`notifications@perpi.id`**
 
-**Jenis Notifikasi**:
-
-**Leader**:
-- ✉️ Aplikasi baru masuk
-- ✉️ Office visit selesai
-- ✉️ Interview selesai
-- ✉️ Pembayaran baru
-
-**Committee**:
-- ✉️ Ditugaskan sebagai inspector
-- ✉️ Ditugaskan sebagai interviewer
-- ✉️ Jadwal plenary meeting
-
-**Finance**:
-- ✉️ Invoice perlu dibuat
-- ✉️ Bukti pembayaran baru
-- ✉️ Sertifikat perlu dibuat
-
----
-
-## 🆘 Troubleshooting
-
-::: tip Error Autentikasi
-Silakan baca [Panduan Autentikasi](../tutorial-autentikasi-perpi.md) untuk detail troubleshooting.
+> **Penting:** Mohon informasikan pengguna untuk menambahkan email tersebut ke *Whitelist/Contacts* agar tidak masuk ke folder Spam.
 :::
-
-### Dashboard Tidak Muncul
-
-**Solusi**:
-- ✅ Refresh halaman (F5)
-- ✅ Clear cache
-- ✅ Cek koneksi internet
-- ✅ Logout dan login kembali
-
----
