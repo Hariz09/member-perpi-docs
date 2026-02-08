@@ -1,12 +1,12 @@
 ---
 slug: update-random-list
-title: Fitur Pengacakan Daftar Nama (Random Sorting)
+title: Fitur Pengacakan Daftar Nama Perusahaan (Random Sorting)
 authors: [dev-team]
 tags: [sorting, randomizer, fairness, ui-ux]
 date: 2026-02-08
 ---
 
-Pembaruan ini mengubah logika tampilan daftar nama (*list view*) dari yang sebelumnya statis (urut abjad) menjadi dinamis (acak/random). Perubahan ini dilakukan untuk memberikan keadilan eksposur bagi setiap individu dalam daftar.
+Pembaruan ini mengubah logika tampilan daftar nama perusahaan (*list view*) dari yang sebelumnya statis (urut abjad) menjadi dinamis (acak/random). Perubahan ini dilakukan untuk memberikan keadilan eksposur bagi setiap individu dalam daftar.
 
 ## ℹ️ Informasi Rilis
 
@@ -25,11 +25,11 @@ Sebelumnya, sistem menggunakan metode pengurutan berdasarkan abjad (A-Z). Hal in
 <div className="row">
   <div className="col col--6">
     <h4>🚫 Metode Lama (A-Z)</h4>
-    <p>Urutan statis. Orang dengan nama awalan huruf awal selalu mendapat keuntungan posisi pertama.</p>
+    <p>Urutan statis. Perusahaan dengan nama awalan huruf awal selalu mendapat keuntungan posisi pertama.</p>
   </div>
   <div className="col col--6">
     <h4>✅ Metode Baru (Fair Random)</h4>
-    <p>Setiap kali halaman dimuat, urutan diacak total. Semua orang punya peluang 10% (jika 10 orang) untuk di posisi 1.</p>
+    <p>Setiap kali halaman dimuat, urutan diacak total. Semua perusahaan punya peluang 10% (jika 10 perusahaan) untuk di posisi 1.</p>
   </div>
 </div>
 
