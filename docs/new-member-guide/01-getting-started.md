@@ -48,49 +48,54 @@ Sebelum mengikuti panduan ini, pastikan Anda sudah:
 
 ## Daftar Panduan
 
-### 1. [Pengisian Profil Perusahaan](./01-company-profile.md)
+### 1. [Pengisian Profil Perusahaan](./02-company-profile.md)
 Melengkapi informasi perusahaan Anda:
 - Data perusahaan
 - Informasi PIC (Person in Charge)
 - Detail operasional
 - Informasi keuangan
 
-### 2. [Upload Dokumen Persyaratan](./02-document-upload.md)
+### 2. [Upload Dokumen Persyaratan](./03-document-upload.md)
 Menyiapkan dan mengunggah dokumen yang diperlukan:
 - Daftar dokumen wajib
 - Format dan persyaratan dokumen
 - Cara upload dokumen
 - Tips persiapan dokumen
 
-### 3. [Submit Aplikasi](./03-application-submission.md)
+### 3. [Submit Aplikasi]
+<!-- (./03-application-submission.md) -->
 Mengirimkan aplikasi untuk direview:
 - Checklist sebelum submit
 - Proses submission
 - Tracking status aplikasi
 - Revisi dokumen (jika diperlukan)
 
-### 4. [Kunjungan Kantor](./04-office-visit.md)
+### 4. [Kunjungan Kantor]
+<!-- (./04-office-visit.md) -->
 Verifikasi lokasi dan fasilitas kantor:
 - Persiapan kunjungan
 - Apa yang akan diperiksa
 - Dokumentasi yang diperlukan
 - Tips sukses kunjungan
 
-### 5. [Interview & Presentasi](./05-interview.md)
+### 5. [Interview & Presentasi]
+<!-- (./05-interview.md) -->
 Presentasi profil perusahaan di kantor PERPI:
 - Persiapan presentasi
 - Materi yang harus dibawakan
 - Format interview
 - Tips presentasi yang baik
 
-### 6. [Rapat Pleno](./06-plenary-meeting.md)
+### 6. [Rapat Pleno]
+<!-- (./06-plenary-meeting.md) -->
 Keputusan akhir dari dewan PERPI:
 - Proses rapat pleno
 - Kriteria penilaian
 - Notifikasi keputusan
 - Langkah setelah keputusan
 
-### 7. [Pembayaran & Aktivasi](./07-payment-activation.md)
+### 7. [Pembayaran & Aktivasi]
+<!-- (./07-payment-activation.md) -->
 Finalisasi keanggotaan:
 - Biaya pendaftaran
 - Cara pembayaran
