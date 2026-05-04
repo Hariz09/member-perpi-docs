@@ -262,10 +262,6 @@ flowchart TD
     PS -.->|"Dibatalkan"| CA
 ```
 
-:::tip Interpretasi
-Alur utama bergerak dari kiri ke kanan. Garis dari `PA` ke `MP` hanya muncul jika nilai transaksi **≥ Rp5 juta**. Dari `rejected`, peserta masih bisa kembali ke `pending_payment` untuk mengunggah bukti baru.
-:::
-
 #### B. Alur Billing Intent (BI)
 
 ```mermaid
