@@ -18,27 +18,23 @@ keywords:
 **Email Blast** adalah fitur untuk mengirim email massal secara manual (mis. pengumuman, undangan, informasi acara) ke penerima yang dipilih berdasarkan **peran (role)** atau **peserta event**. Seluruh Email Blast dikirim dari alamat resmi **`notifications@perpi.id`** dengan nama tampilan **PERPI**.
 
 :::info Sebelum memulai
-Fitur ini hanya dapat diakses oleh peran **Finance** dan **Leader**, dengan hak akses yang berbeda — lihat tabel di bawah sebelum memulai.
+Fitur ini dapat diakses oleh peran **Finance** dan **Leader** dengan hak akses yang **setara** — lihat tabel di bawah sebelum memulai.
 :::
 
 ---
 
 ## Alur Kerja & Hak Akses
 
-Email Blast dirancang dengan alur **dua peran**: **Finance** menyiapkan draft, **Leader** meninjau lalu mengirimkannya. Ini mencegah email massal terkirim tanpa persetujuan/tinjauan dari Leader.
+Email Blast dapat digunakan secara mandiri oleh peran **Finance** maupun **Leader**. Kedua peran memiliki hak akses yang sama untuk seluruh alur kerja, mulai dari membuat draft hingga mengirim blast.
 
 | Aksi | Finance | Leader |
 | :--- | :---: | :---: |
 | Membuat & menyimpan draft | ✅ | ✅ |
 | Melanjutkan edit / menghapus draft | ✅ | ✅ |
 | Melihat Riwayat Blast (draft & terkirim) | ✅ | ✅ |
-| Melampirkan file | ❌ | ✅ |
-| **Mengirim email test** | ❌ | ✅ |
-| **Mengirim email blast** | ❌ | ✅ |
-
-:::warning Khusus Leader
-Tombol **"Kirim Test"** dan **"Kirim"** hanya tersedia untuk akun berperan **Leader**. Saat login sebagai **Finance**, composer akan menampilkan badge **"Mode Draft"** dan hanya tombol **"Simpan Draft"** yang aktif — Finance dapat menyiapkan seluruh isi email, namun pengiriman akhir tetap harus dilakukan oleh Leader.
-:::
+| Melampirkan file | ✅ | ✅ |
+| **Mengirim email test** | ✅ | ✅ |
+| **Mengirim email blast** | ✅ | ✅ |
 
 ---
 
@@ -46,8 +42,7 @@ Tombol **"Kirim Test"** dan **"Kirim"** hanya tersedia untuk akun berperan **Lea
 
 Pada **sidebar**, buka bagian **Email**, lalu pilih submenu **Blast Email**.
 
-- Leader: `Sidebar → Email → Blast Email`
-- Finance: `Sidebar → Email → Blast Email` *(deskripsi menu: "Susun draft email blast (pengiriman khusus Leader)")*
+`Sidebar → Email → Blast Email` — tersedia untuk peran **Finance** maupun **Leader**.
 
 <img src="/img/email/01-blast-email/1-sidebar-blast-email.png" alt="Menu Blast Email pada sidebar" className="img-large" />
 
@@ -80,13 +75,13 @@ Alamat email yang sama hanya boleh berada di **satu** kolom (Kepada **atau** Cc 
 
 **4. Isi Email** — editor teks kaya (rich text), mendukung format tebal, miring, warna teks, dan tautan.
 
-**5. Lampiran** *(khusus Leader)* — klik **"Lampirkan"** untuk menambah file, maksimal **5 file** dengan total ukuran **3 MB**.
+**5. Lampiran** — klik **"Lampirkan"** untuk menambah file, maksimal **5 file** dengan total ukuran **3 MB**.
 
 <img src="/img/email/01-blast-email/2.3-composer-filled.png" alt="Composer terisi lengkap sebelum disimpan" className="img-large" />
 
 **6.** Setelah semua terisi, klik **"Simpan Draft"**.
 
-Jika anda adalah finance silahkan minta leader untuk meninjau draft dan mengirim email blast. Draft yang tersimpan akan muncul di tabel **Riwayat Blast** dengan status **"Draft"**.
+Draft yang tersimpan akan muncul di tabel **Riwayat Blast** dengan status **"Draft"**, dan dapat dilanjutkan atau langsung dikirim oleh Finance maupun Leader.
 
 
 :::tip Melanjutkan draft yang sudah ada
@@ -95,13 +90,13 @@ Draft yang tersimpan dapat dibuka kembali dari halaman **Riwayat Blast** dengan 
 
 ---
 
-## Langkah 3 — Mengirim & Memeriksa Email Test *(khusus Leader)*
+## Langkah 3 — Mengirim & Memeriksa Email Test
 
 Sebelum email blast dapat dikirim, **wajib** mengirim email test terlebih dahulu menggunakan isi yang sama persis dengan draft saat ini.
 
 **1.** Klik tombol **"Kirim Test"** pada composer.
 
-**2.** Pada dialog **"Kirim Email Test"**, kolom **"Alamat email test"** sudah terisi otomatis dengan email akun Leader yang sedang login — dapat diubah ke alamat lain bila perlu.
+**2.** Pada dialog **"Kirim Email Test"**, kolom **"Alamat email test"** sudah terisi otomatis dengan email akun yang sedang login — dapat diubah ke alamat lain bila perlu.
 
 **3.** Klik **"Kirim"** pada dialog. Email test akan terkirim dengan subjek diberi awalan **`[TEST]`**, ke satu alamat tersebut saja.
 
@@ -115,7 +110,7 @@ Setelah test berhasil, badge composer berubah menjadi **"Test terkirim"** dan to
 
 ---
 
-## Langkah 4 — Mengirim Email Blast *(khusus Leader)*
+## Langkah 4 — Mengirim Email Blast
 
 Setelah status **"Test terkirim"** aktif, tombol **"Kirim"** dapat digunakan.
 
