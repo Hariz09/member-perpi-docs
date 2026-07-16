@@ -1,6 +1,6 @@
-# PERPI Member Management
+# Panduan PERPI
 
-Dokumentasi lengkap untuk website [member.perpi.id](https://member.perpi.id/)
+Dokumentasi lengkap untuk Platform PERPI: [member.perpi.id](https://member.perpi.id/)
 
 ## 📚 Dokumentasi
 
@@ -59,12 +59,13 @@ npm run deploy
 ## 📁 Project Structure
 
 ```
-perpi-member-management/
+panduan-perpi/
 ├── docs/                    # Dokumentasi
-│   ├── admin-guide/        # Panduan admin
-│   ├── new-member-guide/   # Panduan member baru
-│   ├── existing-member-guide/
-│   └── img/                # Gambar dokumentasi
+│   ├── tutorial-autentikasi-perpi.md
+│   ├── new-member-guide/   # Panduan anggota baru
+│   ├── event/              # Panduan event
+│   ├── email/              # Panduan email & notifikasi
+│   └── log-pembaruan/      # Changelog
 ├── blog/                    # Blog posts
 ├── src/                     # Source code
 │   ├── components/         # React components

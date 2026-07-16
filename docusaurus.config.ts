@@ -12,7 +12,7 @@ const config: Config = {
   },
 
   title: 'PERPI',
-  tagline: 'PERPI Member Management Docs',
+  tagline: 'Panduan Lengkap Platform & Sistem PERPI',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -56,9 +56,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'PERPI Member Management Docs',
+      title: 'Panduan PERPI',
       logo: {
-        alt: 'PERPI Member Management Docs',
+        alt: 'Panduan PERPI',
         src: 'img/logo.svg',
       },
       items: [
@@ -86,7 +86,7 @@ const config: Config = {
               to: '/docs/tutorial-autentikasi-perpi',
             },
             {
-              label: 'PERPI Member Management',
+              label: 'Platform PERPI',
               href: 'https://member.perpi.id/',
             },
           ],

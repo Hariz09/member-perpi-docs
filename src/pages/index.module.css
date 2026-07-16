@@ -1,21 +1,22 @@
 /* ==========================================================================
-   PERPI MEMBER MANAGEMENT - HOMEPAGE STYLES
+   PANDUAN PERPI - HOMEPAGE STYLES
    ========================================================================== */
 
 :root {
   /* --- Palette --- */
   --home-color-primary: #2563eb;
   --home-color-primary-dark: #1d4ed8;
+  --home-color-accent: #f59e0b;
   --home-color-white: #ffffff;
-  
+
   /* --- Gradients --- */
-  --home-hero-bg-light: linear-gradient(135deg, var(--home-color-primary) 0%, var(--home-color-primary-dark) 100%);
-  --home-hero-bg-dark: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
-  
+  --home-hero-bg-light: linear-gradient(135deg, #1e3a8a 0%, #2563eb 55%, #1d4ed8 100%);
+  --home-hero-bg-dark: linear-gradient(135deg, #0b1223 0%, #131f3d 55%, #0f172a 100%);
+
   /* --- Spacing --- */
-  --home-spacing-hero-y: 8rem;
+  --home-spacing-hero-y: 7rem;
   --home-spacing-hero-x: 2rem;
-  --home-spacing-section-y: 5rem;
+  --home-spacing-section-y: 6rem;
 }
 
 /* ========================================= */
@@ -31,12 +32,53 @@
 
   /* Visuals */
   background: var(--home-hero-bg-light);
-  background-size: cover;
-  background-position: center;
 }
 
 [data-theme='dark'] .heroBanner {
   background: var(--home-hero-bg-dark);
+}
+
+/* Decorative radial glow, purely cosmetic */
+.heroGlow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(96, 165, 250, 0.35), transparent 42%),
+    radial-gradient(circle at 85% 15%, rgba(245, 158, 11, 0.18), transparent 38%),
+    radial-gradient(circle at 50% 100%, rgba(37, 99, 235, 0.4), transparent 55%);
+}
+
+[data-theme='dark'] .heroGlow {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(96, 165, 250, 0.2), transparent 42%),
+    radial-gradient(circle at 85% 15%, rgba(245, 158, 11, 0.12), transparent 38%),
+    radial-gradient(circle at 50% 100%, rgba(37, 99, 235, 0.25), transparent 55%);
+}
+
+.heroBanner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.heroEyebrow {
+  /* Layout */
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.4rem 1rem;
+
+  /* Typography */
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--home-color-white);
+
+  /* Visuals */
+  background-color: rgba(245, 158, 11, 0.16);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  border-radius: 999px;
 }
 
 .heroTitle {
@@ -44,26 +86,26 @@
   margin-bottom: 1.5rem;
 
   /* Typography */
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--home-color-white) !important;
 
   /* Visuals */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .heroSubtitle {
   /* Layout */
-  max-width: 700px;
+  max-width: 640px;
   margin: 0 auto 3rem;
 
   /* Typography */
-  font-size: 1.5rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.375rem);
   font-weight: 400;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.95) !important;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92) !important;
 
   /* Visuals */
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -130,41 +172,135 @@
 }
 
 /* ========================================= */
-/* 3. WELCOME SECTION                        */
+/* 3. FEATURES SECTION                       */
 /* ========================================= */
 
-.welcomeSection {
+.featuresSection {
   padding: var(--home-spacing-section-y) 2rem;
-  text-align: center;
-  background-color: var(--ifm-background-color); /* Inherit from Docusaurus */
-  border-top: 1px solid transparent;
+  background-color: var(--ifm-background-color);
 }
 
-[data-theme='dark'] .welcomeSection {
+[data-theme='dark'] .featuresSection {
   background-color: var(--ifm-background-surface-color);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.welcomeContent {
-  max-width: 800px;
-  margin: 0 auto;
+.sectionHeader {
+  max-width: 640px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
 }
 
-.welcomeTitle {
-  margin-bottom: 1.5rem;
+.sectionTitle {
+  margin-bottom: 1rem;
   color: var(--ifm-heading-color);
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
-.welcomeDescription {
+.sectionDescription {
   margin: 0;
   color: var(--ifm-font-color-base);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.6;
-  opacity: 0.9;
+  opacity: 0.85;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+
+  /* Visuals */
+  background-color: var(--ifm-background-color);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+
+  /* Behavior */
+  text-decoration: none !important;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--home-color-primary);
+  box-shadow: 0 12px 24px -8px rgba(37, 99, 235, 0.25);
+}
+
+[data-theme='dark'] .featureCard {
+  background-color: var(--ifm-background-surface-color);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .featureCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.5);
+}
+
+.featureIcon {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.25rem;
+
+  /* Typography */
+  font-size: 1.5rem;
+
+  /* Visuals */
+  background-color: rgba(37, 99, 235, 0.1);
+  border-radius: 12px;
+}
+
+[data-theme='dark'] .featureIcon {
+  background-color: rgba(96, 165, 250, 0.15);
+}
+
+.featureTitle {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.featureDescription {
+  margin: 0 0 1.25rem;
+  color: var(--ifm-font-color-base);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  opacity: 0.85;
+}
+
+.featureLink {
+  margin-top: auto;
+  color: var(--home-color-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+}
+
+[data-theme='dark'] .featureLink {
+  color: var(--ifm-color-primary-light);
+}
+
+.featureCard:hover .featureLink {
+  transform: translateX(4px);
 }
 
 /* ========================================= */
@@ -174,33 +310,29 @@
 /* Tablet (max-width: 996px) */
 @media screen and (max-width: 996px) {
   :root {
-    --home-spacing-hero-y: 6rem;
-    --home-spacing-section-y: 4rem;
+    --home-spacing-hero-y: 5.5rem;
+    --home-spacing-section-y: 4.5rem;
   }
-  
+
   .heroBanner { padding: var(--home-spacing-hero-y) 1.5rem; }
-  .heroTitle { font-size: 3rem; }
-  .heroSubtitle { font-size: 1.25rem; margin-bottom: 2.5rem; }
-  
-  .welcomeSection { padding: var(--home-spacing-section-y) 1.5rem; }
-  .welcomeTitle { font-size: 2rem; }
-  .welcomeDescription { font-size: 1.125rem; }
+  .heroSubtitle { margin-bottom: 2.5rem; }
+
+  .featuresSection { padding: var(--home-spacing-section-y) 1.5rem; }
+  .sectionHeader { margin-bottom: 2.5rem; }
 }
 
 /* Mobile (max-width: 768px) */
 @media screen and (max-width: 768px) {
   :root {
     --home-spacing-hero-y: 4rem;
-    --home-spacing-section-y: 3rem;
+    --home-spacing-section-y: 3.5rem;
   }
 
   .heroBanner { padding: var(--home-spacing-hero-y) 1rem; }
-  .heroTitle { font-size: 2.25rem; }
-  
+
   .heroSubtitle {
     margin-bottom: 2rem;
     padding: 0 0.5rem;
-    font-size: 1.125rem;
   }
 
   .buttons {
@@ -217,9 +349,8 @@
     padding: 1rem 2rem;
   }
 
-  .welcomeSection { padding: var(--home-spacing-section-y) 1rem; }
-  .welcomeTitle { font-size: 1.75rem; }
-  .welcomeDescription { font-size: 1rem; }
+  .featuresSection { padding: var(--home-spacing-section-y) 1rem; }
+  .featuresGrid { grid-template-columns: 1fr; }
 }
 
 /* Small Mobile (max-width: 480px) */
@@ -228,7 +359,5 @@
     --home-spacing-hero-y: 3rem;
   }
 
-  .heroTitle { font-size: 2rem; }
-  .heroSubtitle { font-size: 1rem; }
-  .welcomeTitle { font-size: 1.5rem; }
+  .heroEyebrow { font-size: 0.7rem; }
 }
